@@ -1,19 +1,18 @@
-# ServiceDetail.jsx Enhancement Tasks
+# Build Fix Tasks
 
-## Current Status
-- [x] Analyze ServiceDetail.jsx file
-- [x] Identify issues and enhancement opportunities
-- [x] Create enhancement plan
-- [x] Get user approval
-- [x] Fix syntax errors (remove invalid const declaration)
-- [x] Standardize phone number to "07633807420"
-- [x] Add Call/WhatsApp buttons to mobile view
-- [x] Improve layout structure for both mobile and desktop
-- [x] Fix React hooks rules violation
-- [x] Run linting check
+## Current Issue
+- Build failing with "SyntaxError: Unexpected token '?'" during react-snap postbuild step
+- Error occurs when crawling pages like /mumbai, /delhi, etc.
+- Root cause: react-snap using older Puppeteer version that doesn't support modern JS features
 
-## Testing & Verification
-- [ ] Test component rendering
-- [ ] Verify no linting errors for ServiceDetail.jsx
-- [ ] Check responsiveness across screen sizes
-- [ ] Confirm button functionality
+## Completed Tasks
+- [x] Added puppeteer@^23.0.0 as devDependency to ensure newer Chromium version
+- [x] Updated reactSnap puppeteerArgs with additional flags for better compatibility
+- [x] Removed incorrect Windows-specific puppeteerExecutablePath
+
+## Next Steps
+- [ ] Test the build locally to verify the fix
+- [ ] If issues persist, consider alternative approaches:
+  - Configure Vite to transpile to ES5 for better compatibility
+  - Temporarily disable react-snap if prerendering isn't critical
+  - Update Node.js version specification for Render deployment

@@ -29,6 +29,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "puppeteer": "^23.0.0",
     "react-snap": "^1.23.0",
     "tailwindcss": "^4.1.18",
     "vite": "^7.2.4"
@@ -62,7 +63,11 @@
     },
     "puppeteerArgs": [
       "--no-sandbox",
-      "--disable-setuid-sandbox"
-    ]
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-gpu",
+      "--disable-software-rasterizer"
+    ],
+    "usePuppeteerFrom": "puppeteer"
   }
 }

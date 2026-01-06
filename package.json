@@ -1,0 +1,67 @@
+{
+  "name": "booking-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "react-snap",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-helmet-async": "^2.0.5",
+    "react-hook-form": "^7.70.0",
+    "react-router-dom": "^7.11.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "react-snap": "^1.23.0",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.2.4"
+  },
+  "reactSnap": {
+    "include": [
+      "/",
+      "/mumbai",
+      "/delhi",
+      "/bangalore",
+      "/pune",
+      "/hyderabad",
+      "/service/1",
+      "/service/2",
+      "/service/3",
+      "/service/4",
+      "/service/5",
+      "/service/6",
+      "/bakeca-incontri",
+      "/blog",
+      "/contact-us",
+      "/terms-and-conditions",
+      "/privacy-policy"
+    ],
+    "minifyHtml": {
+      "collapseWhitespace": true,
+      "removeComments": true,
+      "minifyCSS": true,
+      "minifyJS": true
+    },
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
+  }
+}

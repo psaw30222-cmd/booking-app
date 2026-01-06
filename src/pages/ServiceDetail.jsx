@@ -94,9 +94,13 @@ const ServiceDetail = () => {
                       <p className="text-sm text-neutral-600 mt-1">
                         Duration: {v.duration}
                       </p>
-
-                     
-
+                      
+                      <div className="mt-2">
+                        <span className="text-lg font-bold text-pink-600">
+                          ${v.price}
+                        </span>
+                      </div>
+                      
                       <div className="flex gap-3 w-full mt-4">
                         {/* CALL BUTTON */}
                         <a

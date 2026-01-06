@@ -13,7 +13,7 @@ const ServiceDetail = () => {
   const service = services.find(s => s.id === Number(id));
 
   const [selectedVariant, setSelectedVariant] = useState(
-    service?.variants?.[0] || null
+    service && service.variants && service.variants[0] || null
   );
 
   if (!service) {
@@ -61,7 +61,7 @@ const ServiceDetail = () => {
 
           <div className="space-y-5">
             {service.variants.map((v) => {
-              const isSelected = selectedVariant?.id === v.id;
+              const isSelected = selectedVariant && selectedVariant.id === v.id;
 
               return (
                 <div

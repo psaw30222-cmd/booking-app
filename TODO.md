@@ -2,3 +2,4 @@
 
 - [x] Add "start" script to package.json that runs "vite preview"
 - [x] Test the "start" script locally to ensure it serves the app
+- [x] Fix deprecated package warnings in Vercel build by adding overrides in package.json and regenerating package-lock.json

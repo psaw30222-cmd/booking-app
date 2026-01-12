@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 // Skip react-snap when running on CI/Vercel to avoid missing system libs for Chromium.
-const { execSync } = require('child_process');
+import { execSync } from 'child_process';
 
-const isVercel = process.env.VERCEL === '1' || process.env.VERCEL === 'true';
-const isCI = process.env.CI === 'true';
+const isVercelEnv = String(process.env.VERCEL || '').toLowerCase();
+const isVercel = isVercelEnv === '1' || isVercelEnv === 'true' || isVercelEnv === 'yes';
+const isCI = !!process.env.CI || !!process.env.GITHUB_ACTIONS || !!process.env.GITLAB_CI || !!process.env.CI_NAME;
 
 if (isVercel || isCI) {
   console.log('Skipping react-snap prerender on CI/Vercel environment.');

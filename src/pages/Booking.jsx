@@ -4,6 +4,7 @@ import { useBooking } from "../context/BookingContext";
 import { getVariantGallery } from "../data/variantGalleries";
 import Header from "../components/Header";
 import Button from "../components/Button";
+import { trackEvent } from '../utils/analytics';
 
 const phone = "9999999999";
 
@@ -48,6 +49,16 @@ const Booking = () => {
       date: selectedDate,
       time: selectedTime,
       barber: selectedBarber,
+    });
+
+    // Analytics: user provided booking details (proceed to confirmation)
+    trackEvent('add_payment_info', {
+      service_id: service.id,
+      service_name: service.name,
+      value: service.price,
+      currency: 'INR',
+      date: selectedDate,
+      time: selectedTime
     });
 
     // Navigate to confirmation

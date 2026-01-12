@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 const Blog = () => {
   const blogPosts = [
@@ -55,12 +55,12 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
-      <Helmet>
-        <title>Blog - Booking App</title>
-        <meta name="description" content="Read our latest articles about travel tips, booking guides, and industry insights to make the most of your bookings and travel experiences." />
-        <meta name="keywords" content="blog, travel tips, booking guides, travel advice, industry insights" />
-        <link rel="canonical" href="https://www.booking-app.com/blog" />
-      </Helmet>
+      <SEO
+        title="Blog — City Guides, Safety & Booking Tips | BookEase"
+        description="Read city guides, safety tips, and booking advice for escorts and companion services in India."
+        canonical="https://bookease.com/blog"
+        meta={[{ name: 'keywords', content: 'escort blog, safety tips, booking guides, city guide escorts' }]}
+      />
       
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">

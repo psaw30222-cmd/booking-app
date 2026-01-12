@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { useSearch } from '../context/SearchContext';
 import { services } from '../data/services';
 import ServiceCard from '../components/ServiceCard';
@@ -27,11 +27,12 @@ const SearchResults = () => {
 
   return (
     <div className="min-h-screen bg-neutral-50">
-      <Helmet>
-        <title>Search Results for "{query}" - BookEase</title>
-        <meta name="description" content={`Search results for "${query}" in beauty and wellness services. Find and book services online in India.`} />
-        <link rel="canonical" href={`https://bookease.com/search?q=${encodeURIComponent(query)}`} />
-      </Helmet>
+      <SEO
+        title={`Search results for "${query}" — BookEase`}
+        description={`Search results for "${query}" across our services. Find and book verified companions and services.`}
+        canonical={`https://bookease.com/search?q=${encodeURIComponent(query)}`}
+        meta={[{ name: 'keywords', content: `search results, ${query}` }]}
+      />
       
       <Header />
       

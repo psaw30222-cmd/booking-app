@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import ServiceCard from '../components/ServiceCard';
@@ -19,7 +19,7 @@ const Home = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "BookEase",
-    "url": "https://yourdomain.com",
+    "url": "https://bookease.com",
     "description": "Premium adult companion and escort services directory in India",
     "audience": {
       "@type": "PeopleAudience",
@@ -27,28 +27,19 @@ const Home = () => {
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://yourdomain.com/search?q={search_term_string}",
+      "target": "https://bookease.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
 
   return (
     <div className="min-h-screen bg-neutral-50">
-      <Helmet>
-        <title>BookEase - Book Adult Services & Escorts in India | Mumbai, Delhi, Bangalore</title>
-        <meta name="description" content="Browse 2000+ verified adult companions and escort profiles in India. Available in Mumbai, Delhi, Bangalore, Pune. Safe, discreet booking. Professional service. 18+ only." />
-        <meta name="keywords" content="escorts India, call girls Mumbai, Delhi companions, Bangalore escorts, adult services India, verified escorts, independent escorts, escort directory, massage services India" />
-        <link rel="canonical" href="https://yourdomain.com/" />
-        
-        <meta property="og:title" content="BookEase - Premium Adult Services India" />
-        <meta property="og:description" content="Browse 2000+ verified companions in major Indian cities. 18+" />
-        <meta property="og:url" content="https://yourdomain.com/" />
-        <meta property="og:type" content="website" />
-        
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
+      <SEO
+        title="Escorts in India — Verified Companions & Discreet Booking | BookEase"
+        description="Find verified escorts and companion services across Mumbai, Delhi, Bangalore and more. Discreet, safe bookings. 18+ only."
+        canonical="https://bookease.com/"
+        meta={[{ name: 'keywords', content: 'escorts India, escorts in India, verified escorts, companion services India' }]}
+      />
 
       <Header />
 

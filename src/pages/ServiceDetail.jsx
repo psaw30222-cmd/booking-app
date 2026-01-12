@@ -3,6 +3,9 @@ import { useParams, useNavigate } from "react-router-dom";
 import { services } from "../data/services";
 import Header from "../components/Header";
 import { useBooking } from "../context/BookingContext";
+import SEO from "../components/SEO";
+import { buildServiceJsonLd } from "../utils/schema";
+import { trackEvent } from "../utils/analytics";
 
 const phone = "9999999999";
 const ServiceDetail = () => {
@@ -21,39 +24,42 @@ const ServiceDetail = () => {
     return null;
   }
 
+  const serviceJsonLd = buildServiceJsonLd(service, selectedVariant);
+
+  const seoTitle = `${service.name} — Verified Companions | BookEase`;
+  const seoDescription = service.description || `Book ${service.name} with verified companions. Discreet, safe bookings.`;
+
   // 🔥 SINGLE SOURCE OF TRUTH FOR BOOKING
   const startAndRedirectBooking = (variant) => {
     if (!variant) return;
     setSelectedVariant(variant);
+    // Analytics: start checkout flow
+    trackEvent('begin_checkout', {
+      service_id: service.id,
+      service_name: service.name,
+      value: variant.price,
+      currency: 'INR'
+    });
     startBooking(service, variant);
     navigate("/booking");
   };
 
   return (
     <div className="min-h-screen bg-neutral-50 pb-28">
+      <SEO
+        title={seoTitle}
+        description={seoDescription}
+        canonical={`https://bookease.com/service/${service.id}`}
+        image={service.image}
+        jsonLd={[serviceJsonLd]}
+        lang="en-IN"
+      />
       <Header showBack title={service.name} />
 
       <div className="container mx-auto px-4 py-6">
 
         {/* ================= SERVICE HEADER ================= */}
-        <div className="bg-white rounded-3xl p-6 mb-6 shadow-sm">
-          <div className="flex gap-4">
-            <img
-              src={service.image}
-              alt={service.name}
-              className="w-24 h-24 rounded-2xl object-cover"
-            />
-            <div className="flex-1">
-              <span className="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-semibold mb-2">
-                {service.category}
-              </span>
-              <h2 className="text-2xl font-bold">{service.name}</h2>
-              <p className="text-sm text-neutral-600 mt-1">
-                {service.description}
-              </p>
-            </div>
-          </div>
-        </div>
+        
 
         {/* ================= VARIANTS ================= */}
         <div className="bg-white rounded-3xl p-6 shadow-sm">

@@ -4,6 +4,7 @@ import { useBooking } from '../context/BookingContext';
 import Header from '../components/Header';
 import Button from '../components/Button';
 import Card from '../components/Card';
+import { trackEvent } from '../utils/analytics';
 
 /**
  * Confirmation Page - Review booking before final confirmation
@@ -31,7 +32,22 @@ const Confirmation = () => {
   };
 
   const handleConfirm = () => {
-    confirmBooking();
+    const booking = confirmBooking();
+    // Analytics: booking completed (conversion)
+    if (booking) {
+      trackEvent('purchase', {
+        transaction_id: booking.id,
+        value: booking.service.price,
+        currency: 'INR',
+        items: [
+          {
+            id: booking.service.id,
+            name: booking.service.name,
+            category: booking.service.category
+          }
+        ]
+      });
+    }
     navigate('/success');
   };
 

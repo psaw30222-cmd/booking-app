@@ -1,5 +1,5 @@
-# robots.txt for Adult Services Directory
-# Optimized for search engines that index adult content
+# robots.txt for BookEase
+# Robots rules for BookEase beauty & wellness booking site
 
 User-agent: *
 Allow: /
@@ -7,9 +7,8 @@ Disallow: /admin/
 Disallow: /api/
 Disallow: /private/
 Disallow: /*.json$
-Disallow: /*/book
-Disallow: /*/confirmation
 Disallow: /checkout
+Disallow: /confirmation
 
 # Allow important pages
 Allow: /service/
@@ -24,12 +23,12 @@ Allow: /kolkata
 Allow: /ahmedabad
 
 # Sitemaps
-Sitemap: https://yourdomain.com/sitemap.xml
-Sitemap: https://yourdomain.com/sitemap-cities.xml
-Sitemap: https://yourdomain.com/sitemap-services.xml
-Sitemap: https://yourdomain.com/sitemap-blog.xml
+Sitemap: https://bookease.com/sitemap.xml
+Sitemap: https://bookease.com/sitemap-cities.xml
+Sitemap: https://bookease.com/sitemap-services.xml
+Sitemap: https://bookease.com/sitemap-blog.xml
 
-# Specific bots that handle adult content well
+# Bots
 User-agent: Googlebot
 Crawl-delay: 0
 Allow: /
@@ -55,7 +54,7 @@ User-agent: YandexBot
 Crawl-delay: 1
 Allow: /
 
-# Block bad bots
+# Block known crawler tools
 User-agent: AhrefsBot
 Disallow: /
 

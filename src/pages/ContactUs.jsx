@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -34,12 +34,12 @@ const ContactUs = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
-      <Helmet>
-        <title>Contact Us - Booking App</title>
-        <meta name="description" content="Get in touch with our team for support, feedback, or business inquiries about our booking platform." />
-        <meta name="keywords" content="contact us, support, customer service, booking contact, get in touch" />
-        <link rel="canonical" href="https://www.booking-app.com/contact-us" />
-      </Helmet>
+      <SEO
+        title="Contact BookEase — Support & Inquiries"
+        description="Contact our support team for bookings, business inquiries and press. Email support@bookease.com"
+        canonical="https://bookease.com/contact-us"
+        meta={[{ name: 'keywords', content: 'contact, support, bookings, inquiries' }]}
+      />
       
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">

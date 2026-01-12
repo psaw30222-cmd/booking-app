@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import ServiceCard from '../components/ServiceCard';
@@ -26,7 +26,7 @@ const Mumbai = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "BookEase Mumbai - Adult Companion Services",
-    "image": "https://yourdomain.com/mumbai-banner.jpg",
+    "image": "https://bookease.com/mumbai-banner.jpg",
     "description": "Premium adult companion and escort services in Mumbai. Verified profiles, discreet service, 24/7 availability.",
     "priceRange": "₹₹₹",
     "address": {
@@ -41,7 +41,7 @@ const Mumbai = () => {
       "latitude": 19.0760,
       "longitude": 72.8777
     },
-    "url": "https://yourdomain.com/mumbai",
+    "url": "https://bookease.com/mumbai",
     "telephone": `+91-${phone}`,
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -66,57 +66,74 @@ const Mumbai = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://yourdomain.com"
+        "item": "https://bookease.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Mumbai",
-        "item": "https://yourdomain.com/mumbai"
+        "item": "https://bookease.com/mumbai"
+      }
+    ]
+  }; 
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are the profiles verified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all profiles on our platform are verified with ID proof and authentic photos. We conduct thorough background checks to ensure safety and authenticity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you cover in Mumbai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We cover all major areas of Mumbai including Andheri, Bandra, Juhu, Powai, Colaba and more. Our companions are available across the city 24/7."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make a booking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply browse profiles, select your preferred companion, and contact us via phone or WhatsApp. Our team will help you complete the booking process securely and discreetly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the service discreet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Your privacy is our top priority. All bookings are handled with complete confidentiality, and our companions are professional and discreet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods do you accept?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We accept cash payments. All rates are confirmed at the time of booking, with no hidden charges."
+        }
       }
     ]
   };
 
   return (
     <div className="min-h-screen bg-neutral-50">
-      <Helmet>
-        <title>Escorts in Mumbai | Premium Call Girls & Companions Mumbai 24/7 | BookEase</title>
-        <meta name="description" content="Book verified escorts & call girls in Mumbai. 500+ profiles in Andheri, Bandra, Juhu & all areas. Independent companions available 24/7. Discreet, safe & professional service. Call now!" />
-        <meta name="keywords" content="escorts Mumbai, call girls Mumbai, Mumbai escorts, Andheri escorts, Bandra call girls, Juhu escorts, Mumbai companions, independent escorts Mumbai, verified escorts, adult services Mumbai, massage Mumbai, VIP escorts Mumbai, Russian escorts Mumbai, hotel escorts Mumbai" />
-        <link rel="canonical" href="https://yourdomain.com/mumbai" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Premium Escorts & Call Girls in Mumbai - BookEase" />
-        <meta property="og:description" content="Browse 500+ verified escort profiles in Mumbai. Available 24/7 in all areas. Safe & discreet." />
-        <meta property="og:url" content="https://yourdomain.com/mumbai" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://yourdomain.com/mumbai-og.jpg" />
-        <meta property="og:locale" content="en_IN" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Escorts in Mumbai - BookEase" />
-        <meta name="twitter:description" content="500+ verified escorts in Mumbai. 24/7 availability." />
-        <meta name="twitter:image" content="https://yourdomain.com/mumbai-twitter.jpg" />
-        
-        {/* Alternate Languages */}
-        <link rel="alternate" hreflang="en-in" href="https://yourdomain.com/mumbai" />
-        <link rel="alternate" hreflang="en" href="https://yourdomain.com/mumbai" />
-        
-        {/* Geo Tags */}
-        <meta name="geo.region" content="IN-MH" />
-        <meta name="geo.placename" content="Mumbai" />
-        <meta name="geo.position" content="19.0760;72.8777" />
-        <meta name="ICBM" content="19.0760, 72.8777" />
-        
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbData)}
-        </script>
-      </Helmet>
+      <SEO
+        title="Escorts in Mumbai — Verified Companions & Discreet Booking | BookEase"
+        description="Browse 500+ verified companion profiles in Mumbai (Andheri, Bandra, Juhu). Discreet, safe, and professional bookings with verified providers."
+        canonical="https://bookease.com/mumbai"
+        image="https://bookease.com/mumbai-og.jpg"
+        jsonLd={[structuredData, breadcrumbData, faqJsonLd]}
+        lang="en-IN"
+      />
 
       <Header showBack title="Mumbai Escorts" />
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import ServiceCard from '../components/ServiceCard';
@@ -26,7 +26,7 @@ const Bangalore = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "BookEase Mumbai - Adult Companion Services",
-    "image": "https://yourdomain.com/mumbai-banner.jpg",
+    "image": "https://bookease.com/mumbai-banner.jpg",
     "description": "Premium adult companion and escort services in Mumbai. Verified profiles, discreet service, 24/7 availability.",
     "priceRange": "₹₹₹",
     "address": {
@@ -41,7 +41,7 @@ const Bangalore = () => {
       "latitude": 19.0760,
       "longitude": 72.8777
     },
-    "url": "https://yourdomain.com/mumbai",
+    "url": "https://bookease.com/mumbai",
     "telephone": `+91-${phone}`,
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -66,13 +66,13 @@ const Bangalore = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://yourdomain.com"
+        "item": "https://bookease.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Mumbai",
-        "item": "https://yourdomain.com/mumbai"
+        "item": "https://bookease.com/mumbai"
       }
     ]
   };
@@ -80,34 +80,34 @@ const Bangalore = () => {
   return (
     <div className="min-h-screen bg-neutral-50">
       <Helmet>
-        <title>Escorts in Mumbai | Premium Call Girls & Companions Mumbai 24/7 | BookEase</title>
-        <meta name="description" content="Book verified escorts & call girls in Mumbai. 500+ profiles in Andheri, Bandra, Juhu & all areas. Independent companions available 24/7. Discreet, safe & professional service. Call now!" />
-        <meta name="keywords" content="escorts Mumbai, call girls Mumbai, Mumbai escorts, Andheri escorts, Bandra call girls, Juhu escorts, Mumbai companions, independent escorts Mumbai, verified escorts, adult services Mumbai, massage Mumbai, VIP escorts Mumbai, Russian escorts Mumbai, hotel escorts Mumbai" />
-        <link rel="canonical" href="https://yourdomain.com/mumbai" />
+        <title>Escorts in Bangalore — Verified Companions & Local Services | BookEase</title>
+        <meta name="description" content="Browse verified companion profiles in Bangalore. Discreet bookings and professional services in Koramangala, Indiranagar, Whitefield." />
+        <meta name="keywords" content="escorts Bangalore, Bangalore companions, verified escorts, escorts in Bangalore" />
+        <link rel="canonical" href="https://bookease.com/bangalore" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Premium Escorts & Call Girls in Mumbai - BookEase" />
-        <meta property="og:description" content="Browse 500+ verified escort profiles in Mumbai. Available 24/7 in all areas. Safe & discreet." />
-        <meta property="og:url" content="https://yourdomain.com/mumbai" />
+        <meta property="og:title" content="Escorts in Bangalore — Verified Companions | BookEase" />
+        <meta property="og:description" content="Find verified companions in Bangalore. Discreet, secure bookings and trusted providers in major localities." />
+        <meta property="og:url" content="https://bookease.com/bangalore" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://yourdomain.com/mumbai-og.jpg" />
+        <meta property="og:image" content="https://bookease.com/bangalore-og.jpg" />
         <meta property="og:locale" content="en_IN" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Escorts in Mumbai - BookEase" />
-        <meta name="twitter:description" content="500+ verified escorts in Mumbai. 24/7 availability." />
-        <meta name="twitter:image" content="https://yourdomain.com/mumbai-twitter.jpg" />
+        <meta name="twitter:title" content="Escorts in Bangalore — BookEase" />
+        <meta name="twitter:description" content="Verified companion profiles in Bangalore. Discreet and professional services in Koramangala, Indiranagar, and Whitefield." />
+        <meta name="twitter:image" content="https://bookease.com/bangalore-twitter.jpg" />
         
         {/* Alternate Languages */}
-        <link rel="alternate" hreflang="en-in" href="https://yourdomain.com/mumbai" />
-        <link rel="alternate" hreflang="en" href="https://yourdomain.com/mumbai" />
+        <link rel="alternate" hreflang="en-in" href="https://bookease.com/bangalore" />
+        <link rel="alternate" hreflang="en" href="https://bookease.com/bangalore" />
         
         {/* Geo Tags */}
-        <meta name="geo.region" content="IN-MH" />
-        <meta name="geo.placename" content="Mumbai" />
-        <meta name="geo.position" content="19.0760;72.8777" />
-        <meta name="ICBM" content="19.0760, 72.8777" />
+        <meta name="geo.region" content="IN-KA" />
+        <meta name="geo.placename" content="Bangalore" />
+        <meta name="geo.position" content="12.9716;77.5946" />
+        <meta name="ICBM" content="12.9716, 77.5946" />
         
         {/* Structured Data */}
         <script type="application/ld+json">

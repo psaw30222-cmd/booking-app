@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import ServiceCard from '../components/ServiceCard';
@@ -12,36 +12,36 @@ const Delhi = () => {
   const delhiServices = services.slice(0, 6);
 
   const popularAreas = [
-    { name: "Andheri", slug: "andheri", count: 150 },
-    { name: "Bandra", slug: "bandra", count: 120 },
-    { name: "Juhu", slug: "juhu", count: 95 },
-    { name: "Powai", slug: "powai", count: 80 },
-    { name: "Colaba", slug: "colaba", count: 75 },
-    { name: "Worli", slug: "worli", count: 65 },
-    { name: "Lower Parel", slug: "lower-parel", count: 60 },
-    { name: "Malad", slug: "malad", count: 55 },
+    { name: "Connaught Place", slug: "connaught-place", count: 200 },
+    { name: "Karol Bagh", slug: "karol-bagh", count: 150 },
+    { name: "Saket", slug: "saket", count: 120 },
+    { name: "Hauz Khas", slug: "hauz-khas", count: 95 },
+    { name: "Greater Kailash", slug: "greater-kailash", count: 90 },
+    { name: "Janakpuri", slug: "janakpuri", count: 80 },
+    { name: "Rohini", slug: "rohini", count: 75 },
+    { name: "Noida", slug: "noida", count: 70 },
   ];
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "BookEase Mumbai - Adult Companion Services",
-    "image": "https://yourdomain.com/mumbai-banner.jpg",
-    "description": "Premium adult companion and escort services in Mumbai. Verified profiles, discreet service, 24/7 availability.",
+    "name": "BookEase Delhi - Adult Companion Services",
+    "image": "https://bookease.com/delhi-banner.jpg",
+    "description": "Premium adult companion and escort services in Delhi. Verified profiles, discreet service, 24/7 availability.",
     "priceRange": "₹₹₹",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Mumbai",
-      "addressRegion": "Maharashtra",
-      "postalCode": "400001",
+      "addressLocality": "Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110001",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 19.0760,
-      "longitude": 72.8777
+      "latitude": 28.7041,
+      "longitude": 77.1025
     },
-    "url": "https://yourdomain.com/mumbai",
+    "url": "https://bookease.com/delhi",
     "telephone": `+91-${phone}`,
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -66,59 +66,76 @@ const Delhi = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://yourdomain.com"
+        "item": "https://bookease.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Mumbai",
-        "item": "https://yourdomain.com/mumbai"
+        "name": "Delhi",
+        "item": "https://bookease.com/delhi"
+      }
+    ]
+  }; 
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are the profiles verified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all profiles on our platform are verified with ID proof and authentic photos. We conduct thorough background checks to ensure safety and authenticity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you cover in Delhi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We cover all major areas of Delhi including Connaught Place, Karol Bagh, Saket, Hauz Khas, Greater Kailash and more. Our companions are available across the city 24/7."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make a booking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply browse profiles, select your preferred companion, and contact us via phone or WhatsApp. Our team will help you complete the booking process securely and discreetly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the service discreet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Your privacy is our top priority. All bookings are handled with complete confidentiality, and our companions are professional and discreet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods do you accept?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We accept cash payments. All rates are confirmed at the time of booking, with no hidden charges."
+        }
       }
     ]
   };
 
   return (
     <div className="min-h-screen bg-neutral-50">
-      <Helmet>
-        <title>Escorts in Mumbai | Premium Call Girls & Companions Mumbai 24/7 | BookEase</title>
-        <meta name="description" content="Book verified escorts & call girls in Mumbai. 500+ profiles in Andheri, Bandra, Juhu & all areas. Independent companions available 24/7. Discreet, safe & professional service. Call now!" />
-        <meta name="keywords" content="escorts Mumbai, call girls Mumbai, Mumbai escorts, Andheri escorts, Bandra call girls, Juhu escorts, Mumbai companions, independent escorts Mumbai, verified escorts, adult services Mumbai, massage Mumbai, VIP escorts Mumbai, Russian escorts Mumbai, hotel escorts Mumbai" />
-        <link rel="canonical" href="https://yourdomain.com/mumbai" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Premium Escorts & Call Girls in Mumbai - BookEase" />
-        <meta property="og:description" content="Browse 500+ verified escort profiles in Mumbai. Available 24/7 in all areas. Safe & discreet." />
-        <meta property="og:url" content="https://yourdomain.com/mumbai" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://yourdomain.com/mumbai-og.jpg" />
-        <meta property="og:locale" content="en_IN" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Escorts in Mumbai - BookEase" />
-        <meta name="twitter:description" content="500+ verified escorts in Mumbai. 24/7 availability." />
-        <meta name="twitter:image" content="https://yourdomain.com/mumbai-twitter.jpg" />
-        
-        {/* Alternate Languages */}
-        <link rel="alternate" hreflang="en-in" href="https://yourdomain.com/mumbai" />
-        <link rel="alternate" hreflang="en" href="https://yourdomain.com/mumbai" />
-        
-        {/* Geo Tags */}
-        <meta name="geo.region" content="IN-MH" />
-        <meta name="geo.placename" content="Mumbai" />
-        <meta name="geo.position" content="19.0760;72.8777" />
-        <meta name="ICBM" content="19.0760, 72.8777" />
-        
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbData)}
-        </script>
-      </Helmet>
+      <SEO
+        title="Escorts in Delhi — Verified Companions & Discreet Booking | BookEase"
+        description="Find trusted companion services and verified profiles in Delhi. Discreet, safe bookings across major Delhi areas."
+        canonical="https://bookease.com/delhi"
+        image="https://bookease.com/delhi-og.jpg"
+        jsonLd={[structuredData, breadcrumbData, faqJsonLd]}
+        lang="en-IN"
+      />
 
-      <Header showBack title="Mumbai Escorts" />
+      <Header showBack title="Delhi Escorts" />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-pink-600 to-pink-700 text-white py-12">
@@ -126,15 +143,15 @@ const Delhi = () => {
           <nav className="text-sm mb-4 opacity-90">
             <Link to="/" className="hover:underline">Home</Link> 
             <span className="mx-2">›</span> 
-            <span>Mumbai</span>
+            <span>Delhi</span>
           </nav>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Escorts & Companions in Mumbai
+            Escorts & Companions in Delhi
           </h1>
           <p className="text-xl mb-6 max-w-3xl">
             Browse 500+ verified profiles of premium escorts and independent companions 
-            available 24/7 across all areas of Mumbai. Discreet, safe, and professional service.
+            available 24/7 across all areas of Delhi. Discreet, safe, and professional service.
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -167,13 +184,13 @@ const Delhi = () => {
         {/* Popular Areas */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-neutral-900 mb-6">
-            Popular Areas in Mumbai
+            Popular Areas in Delhi
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {popularAreas.map((area) => (
               <Link
                 key={area.slug}
-                to={`/mumbai/${area.slug}`}
+                to={`/delhi/${area.slug}`}
                 className="bg-white rounded-xl p-4 hover:shadow-lg transition-shadow border border-neutral-200"
               >
                 <div className="flex justify-between items-start mb-2">
@@ -193,7 +210,7 @@ const Delhi = () => {
         {/* Services */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-neutral-900 mb-6">
-            Available Services in Mumbai
+            Available Services in Delhi
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {delhiServices.map((service) => (
@@ -204,11 +221,9 @@ const Delhi = () => {
 
         {/* SEO Content */}
         <section className="prose prose-lg max-w-none mb-12 bg-white rounded-2xl p-8">
-          <h2>About Escort Services in Mumbai</h2>
+          <h2>About Escort Services in Delhi</h2>
           <p>
-            Mumbai, the city of dreams, is home to India's most vibrant adult entertainment scene. 
-            Our platform connects you with verified, professional escorts and companions across all 
-            major areas of Mumbai including Andheri, Bandra, Juhu, Powai, and beyond.
+            Delhi is home to a diverse and dynamic adult services scene. Our platform connects you with verified, professional escorts and companions across all major areas of Delhi including Connaught Place, Karol Bagh, Hauz Khas, Saket, and beyond.
           </p>
 
           <h3>Why Choose BookEase Mumbai?</h3>

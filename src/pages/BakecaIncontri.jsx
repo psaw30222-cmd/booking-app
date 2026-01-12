@@ -1,15 +1,15 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 const BakecaIncontri = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-8">
-      <Helmet>
-        <title>Bakeca Incontri - Booking App</title>
-        <meta name="description" content="Bakeca Incontri - Connect with like-minded individuals in our specialized booking network for unique social experiences and encounters." />
-        <meta name="keywords" content="bakeca incontri, social booking, meeting people, dating events, social experiences" />
-        <link rel="canonical" href="https://www.booking-app.com/bakeca-incontri" />
-      </Helmet>
+      <SEO
+        title="Bakeca Incontri — Social Experiences & Meetups | BookEase"
+        description="Bakeca Incontri for social experiences, events, and meetups. Discover and book social activities safely."
+        canonical="https://bookease.com/bakeca-incontri"
+        meta={[{ name: 'keywords', content: 'bakeca incontri, social events, meetups, social booking' }]}
+      />
       
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">

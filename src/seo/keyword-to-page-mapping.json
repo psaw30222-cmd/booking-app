@@ -1,0 +1,55 @@
+{
+  "/": {
+    "primary": "escorts in india",
+    "title": "Escorts in India — Verified Companions & Discreet Booking | BookEase",
+    "description": "Find verified escorts and companion services across Mumbai, Delhi, Bangalore and more. Discreet, safe bookings. 18+ only.",
+    "keywords": "escorts India, escorts in India, verified escorts, companion services India"
+  },
+  "/delhi": {
+    "primary": "escorts in delhi",
+    "title": "Escorts in Delhi — Verified Companions & Discreet Booking | BookEase",
+    "description": "Find verified escorts and companion services in Delhi. Discreet, safe bookings across Connaught Place, Karol Bagh, Saket, Hauz Khas and more.",
+    "keywords": "escorts Delhi, delhi escorts, call girls delhi, escort service delhi"
+  },
+  "/mumbai": {
+    "primary": "escorts in mumbai",
+    "title": "Escorts in Mumbai — Verified Companions & Discreet Booking | BookEase",
+    "description": "Find verified escorts and companion services in Mumbai. Discreet, safe bookings across Andheri, Bandra, Juhu, Powai and more.",
+    "keywords": "escorts Mumbai, mumbai escorts, call girls mumbai"
+  },
+  "/bangalore": {
+    "primary": "escorts in bangalore",
+    "title": "Escorts in Bangalore — Verified Companions & Discreet Booking | BookEase",
+    "description": "Find verified escorts and companions in Bangalore across Koramangala, Indiranagar, Whitefield, and more.",
+    "keywords": "escorts Bangalore, bangalore escorts, call girls bangalore"
+  },
+  "/service": {
+    "primary": "[service]",
+    "titleTemplate": "{name} — Verified Companions | BookEase",
+    "descriptionTemplate": "{description}",
+    "keywordsTemplate": "{category}, {name}, escort service"
+  },
+  "/blog": {
+    "primary": "escort guides blog",
+    "title": "Blog — City Guides, Safety & Booking Tips | BookEase",
+    "description": "Read city guides, safety tips, and booking advice for escorts and companion services in India.",
+    "keywords": "escort blog, safety tips, booking guides, city guide escorts"
+  },
+  "/search": {
+    "primary": "search results",
+    "titleTemplate": "Search results for \"{query}\" — BookEase",
+    "descriptionTemplate": "Search results for \"{query}\" across our services. Find and book verified companions and services."
+  },
+  "/contact-us": {
+    "primary": "contact bookease",
+    "title": "Contact BookEase — Support & Inquiries",
+    "description": "Contact our support team for bookings, business inquiries and press. Email support@bookease.com",
+    "keywords": "contact, support, bookings, inquiries"
+  },
+  "/bakeca-incontri": {
+    "primary": "bakeca incontri",
+    "title": "Bakeca Incontri — Social Experiences & Meetups | BookEase",
+    "description": "Bakeca Incontri for social experiences, events, and meetups. Discover and book social activities safely.",
+    "keywords": "bakeca incontri, social events, meetups, social booking"
+  }
+}

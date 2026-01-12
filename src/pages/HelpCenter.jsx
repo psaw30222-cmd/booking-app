@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 const HelpCenter = () => {
   const [activeCategory, setActiveCategory] = useState('general');
@@ -106,12 +106,12 @@ const HelpCenter = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
-      <Helmet>
-        <title>Help Center - Booking App</title>
-        <meta name="description" content="Find answers to frequently asked questions about booking, payments, cancellations, and account management in our comprehensive help center." />
-        <meta name="keywords" content="help center, faq, frequently asked questions, booking help, customer support" />
-        <link rel="canonical" href="https://www.booking-app.com/help-center" />
-      </Helmet>
+      <SEO
+        title="Help Center — FAQs & Support | BookEase"
+        description="Find answers to frequently asked questions about booking, payments, cancellations, and account management in our comprehensive help center."
+        canonical="https://bookease.com/help-center"
+        meta={[{ name: 'keywords', content: 'help center, faq, booking help, customer support' }]}
+      />
       
       <div className="max-w-6xl mx-auto px-4">
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">

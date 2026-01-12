@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { BookingProvider } from './context/BookingContext';
 import { SearchProvider } from './context/SearchContext';
 import TermsModal from './components/TermsModal';
@@ -26,6 +26,7 @@ import Network from './pages/Network';
 import Mumbai from './pages/Mumbai';
 import Delhi from './pages/Delhi';
 import Bangalore from './pages/Bangalore';
+import { trackPageView } from './utils/analytics';
 
 
 
@@ -33,6 +34,16 @@ import Bangalore from './pages/Bangalore';
  * Main App Component with Routing
  */
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Send a pageview to GA on location change
+    const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
+    if (measurementId) {
+      trackPageView(location.pathname + location.search, measurementId);
+    }
+  }, [location]);
+
   return (
     <BookingProvider>
       <SearchProvider>

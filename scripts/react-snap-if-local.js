@@ -15,7 +15,13 @@ const isVercel = vercelEnvVars.some((v) => !!process.env[v]) ||
                  // Aggressive production detection
                  (process.env.NODE_ENV === 'production' && !process.env.REACT_SNAP_LOCAL) ||
                  !!process.env.SKIP_REACT_SNAP || // Explicit skip flag
-                 !!process.env.VERCEL_GIT_COMMIT_REF; // Vercel git environment
+                 !!process.env.VERCEL_GIT_COMMIT_REF || // Vercel git environment
+                 // Ultimate fallback - if we're in a build process with specific markers
+                 (process.env.NODE_ENV === 'production' && process.argv.some(arg => arg.includes('build')) && !process.env.LOCAL_BUILD) ||
+                 // Vercel-specific path detection
+                 process.cwd().includes('/vercel/path') ||
+                 // Emergency detection - if we see the problematic Chrome path in args
+                 process.argv.some(arg => arg.includes('linux-686378'));
 const isCI = !!process.env.CI || 
              !!process.env.GITHUB_ACTIONS || 
              !!process.env.GITLAB_CI || 

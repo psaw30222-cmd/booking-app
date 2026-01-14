@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Skip react-snap when running on CI/Vercel to avoid missing system libs for Chromium.
-const { execSync } = require('child_process');
+import { execSync } from 'child_process';
 
 const vercelEnvVars = ['VERCEL', 'VERCEL_ENV', 'VERCEL_URL', 'NOW', 'NOW_BUILDER', 'VERCEL_GIT_PROVIDER', 'VERCEL_REGION', 'VERCEL_PROJECT_ID', 'VERCEL_ORG_ID', 'VERCEL_BUILDER'];
 const isVercel = vercelEnvVars.some((v) => !!process.env[v]) || process.cwd().includes('/vercel');

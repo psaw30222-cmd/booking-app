@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "postbuild": "node ./scripts/react-snap-if-local.js",
-    "prerender": "react-snap",
+    "prerender": "node ./scripts/react-snap-if-local.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite preview"
@@ -31,7 +31,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
-    "puppeteer": "^24.15.0",
+    "puppeteer": "10.4.0",
     "react-snap": "^1.23.0",
     "tailwindcss": "^4.1.18",
     "vite": "^7.2.4"
@@ -82,6 +82,8 @@
     ],
     "puppeteer": {
       "ignoreHTTPSErrors": true,
+      "skipDownload": true,
+      "executablePath": "/usr/bin/google-chrome-stable",
       "args": [
         "--no-sandbox",
         "--disable-setuid-sandbox",

@@ -7,5 +7,13 @@ export default defineConfig({
   plugins: [react()],
   build: {
     target: 'es2015'
+  },
+  server: {
+    historyApiFallback: true
+  },
+  preview: {
+    host: true,
+    port: 4173,
+    strictPort: true
   }
 })

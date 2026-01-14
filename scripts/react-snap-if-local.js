@@ -13,7 +13,9 @@ const isVercel = vercelEnvVars.some((v) => !!process.env[v]) ||
                  process.argv.includes('--vercel') || // Manual flag
                  process.env.DEPLOYMENT_URL?.includes('.vercel.app') ||
                  // Aggressive production detection
-                 (process.env.NODE_ENV === 'production' && !process.env.REACT_SNAP_LOCAL);
+                 (process.env.NODE_ENV === 'production' && !process.env.REACT_SNAP_LOCAL) ||
+                 !!process.env.SKIP_REACT_SNAP || // Explicit skip flag
+                 !!process.env.VERCEL_GIT_COMMIT_REF; // Vercel git environment
 const isCI = !!process.env.CI || 
              !!process.env.GITHUB_ACTIONS || 
              !!process.env.GITLAB_CI || 
@@ -22,13 +24,19 @@ const isCI = !!process.env.CI ||
              !!process.env.BUILD || 
              !!process.env.CONTINUOUS_INTEGRATION;
 
+console.log('=== ENVIRONMENT DEBUG INFO ===');
 console.log('cwd: ' + process.cwd());
 console.log('NODE_ENV: ' + process.env.NODE_ENV);
-console.log('VERCEL env var: ' + process.env.VERCEL);
+console.log('VERCEL: ' + process.env.VERCEL);
 console.log('VERCEL_ENV: ' + process.env.VERCEL_ENV);
 console.log('CI: ' + process.env.CI);
+console.log('SKIP_REACT_SNAP: ' + process.env.SKIP_REACT_SNAP);
+console.log('VERCEL_GIT_COMMIT_REF: ' + process.env.VERCEL_GIT_COMMIT_REF);
+console.log('PWD: ' + process.env.PWD);
+console.log('DEPLOYMENT_URL: ' + process.env.DEPLOYMENT_URL);
 console.log('isVercel: ' + isVercel);
 console.log('isCI: ' + isCI);
+console.log('===============================');
 
 if (isVercel || isCI) {
   const detectedVercel = vercelEnvVars.filter((v) => !!process.env[v]);

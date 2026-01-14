@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>Page Not Found | BookEase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            padding: 40px;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: #dc2626;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 15px;
+        }
+        
+        .error-message {
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .nav-item {
+            background: #fef2f2;
+            border: 2px solid #fecaca;
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: #1f2937;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item:hover {
+            background: #fee2e2;
+            border-color: #fca5a5;
+            transform: translateY(-2px);
+        }
+        
+        .nav-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .nav-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .nav-desc {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .footer-link {
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+        
+        .footer-link:hover {
+            color: #dc2626;
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 5rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-message">
+            Sorry, we couldn't find the page you're looking for.<br>
+            The URL may be incorrect or the page may have been moved.
+        </p>
+        
+        <div class="nav-grid">
+            <a href="/" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <div class="nav-title">Homepage</div>
+                <div class="nav-desc">Return to main page</div>
+            </a>
+            
+            <a href="/mumbai" class="nav-item">
+                <span class="nav-icon">🏙️</span>
+                <div class="nav-title">Mumbai Escorts</div>
+                <div class="nav-desc">Verified companion services</div>
+            </a>
+            
+            <a href="/delhi" class="nav-item">
+                <span class="nav-icon">🏛️</span>
+                <div class="nav-title">Delhi Services</div>
+                <div class="nav-desc">Professional companionship</div>
+            </a>
+            
+            <a href="/help-center" class="nav-item">
+                <span class="nav-icon">❓</span>
+                <div class="nav-title">Help Center</div>
+                <div class="nav-desc">Get assistance</div>
+            </a>
+        </div>
+        
+        <div class="footer-links">
+            <a href="/contact-us" class="footer-link">Contact Us</a>
+            <span>•</span>
+            <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
+            <span>•</span>
+            <a href="/terms-and-conditions" class="footer-link">Terms</a>
+        </div>
+    </div>
+    
+    <script>
+        // Track 404 error in analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', '404_error', {
+                page_location: window.location.href,
+                referrer: document.referrer
+            });
+        }
+        
+        // Auto-redirect common typos
+        const pathname = window.location.pathname.toLowerCase();
+        const redirects = {
+            '/home': '/',
+            '/index': '/',
+            '/main': '/',
+            '/escort': '/mumbai',
+            '/escorts': '/mumbai'
+        };
+        
+        if (redirects[pathname]) {
+            window.location.replace(redirects[pathname]);
+        }
+    </script>
+</body>
+</html>

@@ -5,6 +5,8 @@ import Header from '../components/Header';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../data/services';
 
+
+
 const phone = "9999999999";
 
 const Delhi = () => {
@@ -22,16 +24,18 @@ const Delhi = () => {
     { name: "Noida", slug: "noida", count: 70 },
   ];
 
-  const structuredData = {
+  // Enhanced Local Business Schema for Delhi
+  const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "BookEase Delhi - Adult Companion Services",
+    "@type": "AdultEntertainment",
+    "name": "BookEase Delhi Escorts",
     "image": "https://bookease.com/delhi-banner.jpg",
-    "description": "Premium adult companion and escort services in Delhi. Verified profiles, discreet service, 24/7 availability.",
+    "description": "Verified escort and companion services in Delhi with 450+ profiles across Connaught Place, Karol Bagh, Saket and more areas",
     "priceRange": "₹₹₹",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Delhi",
+      "streetAddress": "Multiple locations",
+      "addressLocality": "New Delhi",
       "addressRegion": "Delhi",
       "postalCode": "110001",
       "addressCountry": "IN"
@@ -55,10 +59,39 @@ const Delhi = () => {
       "reviewCount": "327",
       "bestRating": "5",
       "worstRating": "1"
+    },
+    "serviceArea": {
+      "@type": "Place",
+      "name": "National Capital Region"
     }
   };
-
-  const breadcrumbData = {
+  
+  // Location-specific FAQ schema for AEO
+  const locationFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are the safest areas to meet escorts in Delhi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Connaught Place, Saket, South Delhi residential areas, and established hotel zones are among the safest areas for escort meetings in Delhi. These locations offer good security, discretion, and convenient access."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there 24/7 escort services available in Delhi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Delhi offers 24/7 escort services through verified platforms like BookEase. Many companions are available round-the-clock, particularly in areas like Connaught Place, Karol Bagh, and South Delhi with active nightlife scenes."
+        }
+      }
+    ]
+  };
+  
+  // Breadcrumb schema for local navigation
+  const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -66,73 +99,38 @@ const Delhi = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bookease.com"
+        "item": "https://www.escortmumbaii.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Delhi",
-        "item": "https://bookease.com/delhi"
-      }
-    ]
-  }; 
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Are the profiles verified?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, all profiles on our platform are verified with ID proof and authentic photos. We conduct thorough background checks to ensure safety and authenticity."
-        }
+        "item": "https://www.escortmumbaii.in/delhi"
       },
       {
-        "@type": "Question",
-        "name": "What areas do you cover in Delhi?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We cover all major areas of Delhi including Connaught Place, Karol Bagh, Saket, Hauz Khas, Greater Kailash and more. Our companions are available across the city 24/7."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I make a booking?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Simply browse profiles, select your preferred companion, and contact us via phone or WhatsApp. Our team will help you complete the booking process securely and discreetly."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is the service discreet?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. Your privacy is our top priority. All bookings are handled with complete confidentiality, and our companions are professional and discreet."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What payment methods do you accept?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We accept cash payments. All rates are confirmed at the time of booking, with no hidden charges."
-        }
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Escorts",
+        "item": "https://www.escortmumbaii.in/delhi/escorts"
       }
     ]
   };
 
+
+
   return (
     <div className="min-h-screen bg-neutral-50">
       <SEO
-        title="Escorts in Delhi — Verified Companions & Discreet Booking | BookEase"
-        description="Find trusted companion services and verified profiles in Delhi. Discreet, safe bookings across major Delhi areas."
-        canonical="https://bookease.com/delhi"
-        image="https://bookease.com/delhi-og.jpg"
-        jsonLd={[structuredData, breadcrumbData, faqJsonLd]}
+        title="Delhi Escorts 2026 — 450+ Verified Profiles NCR | BookEase"
+        description="✓ 450+ verified Delhi escorts ✓ Connaught Place, Karol Bagh ✓ NCR wide ✓ Available tonight. Book premium companions. 18+ only. Verified today."
+        canonical="https://www.escortmumbaii.in/delhi"
+        image="https://www.escortmumbaii.in/delhi-og.jpg"
+        entityType="localBusiness"
         lang="en-IN"
+        jsonLd={[localBusinessSchema]}
+        faqSchema={locationFaqSchema}
+        breadcrumbSchema={breadcrumbSchema}
+        meta={[{ name: 'keywords', content: 'Delhi escorts 2026, verified Delhi escorts, 450+ profiles, Connaught Place escorts, Karol Bagh escorts, NCR escorts, available tonight' }]}
       />
 
       <Header showBack title="Delhi Escorts" />
@@ -147,7 +145,7 @@ const Delhi = () => {
           </nav>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Escorts & Companions in Delhi
+            Delhi Escorts 2026 — 450+ Verified Companions in Connaught Place, South Extension, Lajpat Nagar
           </h1>
           <p className="text-xl mb-6 max-w-3xl">
             Browse 500+ verified profiles of premium escorts and independent companions 
@@ -228,12 +226,12 @@ const Delhi = () => {
 
           <h3>Why Choose BookEase Delhi?</h3>
           <ul>
-            <li><strong>Verified Profiles:</strong> All companions are verified with ID proof and photos</li>
-            <li><strong>24/7 Availability:</strong> Services available round the clock in all areas</li>
-            <li><strong>Discreet Service:</strong> Your privacy is our top priority</li>
-            <li><strong>Safe Booking:</strong> Secure platform with trusted payment options</li>
-            <li><strong>Wide Selection:</strong> 500+ profiles to choose from</li>
-            <li><strong>Professional Service:</strong> Experienced, courteous companions</li>
+            <li><strong>Verified Profiles:</strong> All companions are ID verified with authentic photos, ensuring complete transparency and trust for safe bookings with verified authenticity and background-checked profiles</li>
+            <li><strong>24/7 Availability:</strong> Services available round the clock in all major cities with real-time availability updates and immediate booking options for same day service</li>
+            <li><strong>Discreet Service:</strong> Your privacy is our top priority with confidential booking, discreet meetings, and secure transactions throughout India</li>
+            <li><strong>Safe Booking:</strong> Secure platform with trusted companions, verified authenticity guarantees, and background-checked profiles for safe services</li>
+            <li><strong>Wide Selection:</strong> 450+ verified profiles of independent escorts and professional companions across Delhi NCR with premium companion services</li>
+            <li><strong>Professional Service:</strong> Experienced, courteous companions with background-checked profiles and premium companion services for adult entertainment</li>
           </ul>
 
           <h3>Popular Services in Delhi</h3>

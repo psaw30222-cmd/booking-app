@@ -10,7 +10,9 @@
     "prerender": "node ./scripts/react-snap-if-local.js",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite preview"
+    "start": "vite preview",
+    "seo:audit": "node scripts/seo-audit.js",
+    "seo:audit:url": "node scripts/seo-audit.js"
   },
   "dependencies": {
     "lucide-react": "^0.562.0",

@@ -2,8 +2,8 @@ export const siteOrganizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "BookEase",
-  "url": "https://bookease.com",
-  "logo": "https://bookease.com/logo.png",
+  "url": "https://www.escortmumbaii.in",
+  "logo": "https://www.escortmumbaii.in/logo.png",
   "telephone": "+91-9999999999",
   "sameAs": [
     "https://www.facebook.com/yourpage",

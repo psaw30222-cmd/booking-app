@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-01-14T20:06:05.735Z",
+  "url": "https://bookease.com",
+  "issues": [
+    {
+      "type": "robots.txt",
+      "message": "Blocking all crawlers - will hurt SEO",
+      "severity": "critical"
+    },
+    {
+      "type": "sitemap",
+      "message": "Sitemap not found at /sitemap-index.xml",
+      "severity": "medium"
+    }
+  ],
+  "score": 70,
+  "summary": {
+    "totalIssues": 2,
+    "criticalIssues": 1,
+    "highIssues": 0,
+    "mediumIssues": 1,
+    "score": 70,
+    "grade": "C"
+  },
+  "recommendations": [
+    {
+      "priority": "urgent",
+      "title": "Critical Issues Needing Immediate Attention",
+      "items": [
+        "Blocking all crawlers - will hurt SEO"
+      ]
+    }
+  ]
+}

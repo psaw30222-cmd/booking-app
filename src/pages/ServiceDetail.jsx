@@ -4,6 +4,7 @@ import { services } from "../data/services";
 import Header from "../components/Header";
 import { useBooking } from "../context/BookingContext";
 import SEO from "../components/SEO";
+import LazyImage from "../components/LazyImage";
 import { buildServiceJsonLd } from "../utils/schema";
 import { trackEvent } from "../utils/analytics";
 
@@ -85,10 +86,12 @@ const ServiceDetail = () => {
                       className="relative h-64"
                       onClick={() => startAndRedirectBooking(v)}
                     >
-                      <img
+                      <LazyImage
                         src={v.image}
-                        alt={v.name}
+                        alt={`${v.name} - Verified ${service.name} service in India - Professional companion - ID verified profile`}
                         className="w-full h-full object-cover cursor-pointer"
+                        loading="lazy"
+                        decoding="async"
                       />
                       <span className="absolute top-3 right-3 bg-pink-600 text-white px-3 py-1 rounded-full font-bold">
                         ${v.price}
@@ -165,10 +168,12 @@ const ServiceDetail = () => {
                       className="w-48 h-56 rounded-2xl overflow-hidden"
                       onClick={() => startAndRedirectBooking(v)}
                     >
-                      <img
+                      <LazyImage
                         src={v.image}
-                        alt={v.name}
+                        alt={`${v.name} - Verified ${service.name} service in India - Professional companion - ID verified profile`}
                         className="w-full h-full object-cover cursor-pointer"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
 

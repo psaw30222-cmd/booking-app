@@ -1,0 +1,68 @@
+# robots.txt for BookEase
+# Robots rules for BookEase beauty & wellness booking site
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /checkout
+Disallow: /confirmation
+
+# Allow important pages
+Allow: /service/
+Allow: /search
+Allow: /mumbai
+Allow: /delhi
+Allow: /bangalore
+Allow: /pune
+Allow: /hyderabad
+Allow: /chennai
+Allow: /kolkata
+Allow: /ahmedabad
+
+# Sitemaps
+Sitemap: https://bookease.com/sitemap.xml
+Sitemap: https://bookease.com/sitemap-cities.xml
+Sitemap: https://bookease.com/sitemap-services.xml
+Sitemap: https://bookease.com/sitemap-blog.xml
+
+# Bots
+User-agent: Googlebot
+Crawl-delay: 0
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Crawl-delay: 0
+Allow: /
+
+User-agent: Slurp
+Crawl-delay: 1
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Crawl-delay: 1
+Allow: /
+
+# Block known crawler tools
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

@@ -1,0 +1,211 @@
+{
+  "structuredDataEnhancements": {
+    "lastUpdated": "2026-01-14",
+    "version": "2.0",
+    "focus": "Rich results, FAQ schema, and enhanced entity markup"
+  },
+  "faqSchema": {
+    "type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I verify if an escort is legitimate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Look for verified badges on reputable platforms, check for authentic photos, verify government ID, read genuine reviews, and use secure booking platforms like BookEase that conduct thorough background checks."
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "What safety measures should I take when meeting an escort?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meet in public places initially, inform trusted friends about your plans, verify the escort's identity beforehand, use secure communication channels, and trust your instincts if something feels off."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are online escort platforms safe to use?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "Reputable platforms like BookEase are safe as they verify profiles, provide secure communication, offer customer support, and maintain strict privacy policies. Always choose established platforms with positive reviews."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I book an escort through BookEase?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Browse verified profiles on BookEase, select your preferred companion, check availability and services, contact via phone or WhatsApp, confirm booking details and timing, and complete the arrangement securely through our platform."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What payment methods are accepted for escort services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most escorts accept cash payments arranged during booking. Some may accept digital payments through secure platforms. Rates are confirmed upfront with no hidden charges. BookEase facilitates transparent pricing discussions."
+        }
+      }
+    ]
+  },
+  "enhancedOrganizationSchema": {
+    "@context": "https://schema.org",
+    "@type": "AdultEntertainment",
+    "name": "BookEase",
+    "alternateName": "Book Ease",
+    "url": "https://www.escortmumbaii.in",
+    "logo": "https://www.escortmumbaii.in/logo.png",
+    "description": "India's premier verified escort and companion services directory with 2000+ verified profiles across major cities",
+    "telephone": "+91-9999999999",
+    "email": "support@escortmumbaii.in",
+    "sameAs": [
+      "https://www.facebook.com/escortmumbaii",
+      "https://twitter.com/escortmumbaii",
+      "https://www.instagram.com/escortmumbaii"
+    ],
+    "knowsAbout": [
+      "Escort services",
+      "Companion services", 
+      "Adult entertainment",
+      "Verification services",
+      "Booking platforms"
+    ],
+    "knowsLanguage": ["English", "Hindi"],
+    "serviceArea": {
+      "@type": "Place",
+      "name": "India",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      }
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "BookEase Team"
+    },
+    "dateCreated": "2024",
+    "offers": {
+      "@type": "Offer",
+      "name": "Verified Escort Booking Services",
+      "description": "Secure platform connecting clients with verified adult companions across India",
+      "category": "Adult Entertainment Services"
+    }
+  },
+  "localBusinessSchema": {
+    "mumbai": {
+      "@context": "https://schema.org",
+      "@type": "AdultEntertainment",
+      "name": "BookEase Mumbai Escorts",
+      "image": "https://www.escortmumbaii.in/mumbai-banner.jpg",
+      "description": "Verified escort and companion services in Mumbai with 500+ profiles across Andheri, Bandra, Juhu and more areas",
+      "priceRange": "₹₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Multiple locations",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra", 
+        "postalCode": "400001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.0760,
+        "longitude": 72.8777
+      },
+      "url": "https://www.escortmumbaii.in/mumbai",
+      "telephone": "+91-9999999999",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "327",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "serviceArea": {
+        "@type": "Place",
+        "name": "Greater Mumbai Area"
+      }
+    }
+  },
+  "articleSchema": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Complete Guide to Safe Escort Booking in India",
+    "description": "Learn how to safely book verified escorts through reputable platforms with expert safety tips and verification methods",
+    "author": {
+      "@type": "Organization",
+      "name": "BookEase Editorial Team"
+    },
+    "publisher": {
+      "@type": "Organization", 
+      "name": "BookEase",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.escortmumbaii.in/logo.png"
+      }
+    },
+    "datePublished": "2026-01-14",
+    "dateModified": "2026-01-14",
+    "articleBody": "This comprehensive guide covers everything you need to know about safe escort booking...",
+    "keywords": "escort safety, verified escorts, booking guide, safety tips, India escorts"
+  },
+  "breadcrumbSchema": {
+    "@context": "https://schema.org", 
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.escortmumbaii.in"
+      },
+      {
+        "@type": "ListItem", 
+        "position": 2,
+        "name": "Mumbai",
+        "item": "https://www.escortmumbaii.in/mumbai"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Andheri Escorts",
+        "item": "https://www.escortmumbaii.in/mumbai/andheri"
+      }
+    ]
+  },
+  "entityMarkup": {
+    "entities": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Place",
+        "@id": "https://www.escortmumbaii.in/entity/mumbai",
+        "name": "Mumbai",
+        "alternateName": ["Bombay"],
+        "description": "Financial capital of India with major escort service hubs",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Maharashtra"
+        }
+      },
+      {
+        "@context": "https://schema.org", 
+        "@type": "Place",
+        "@id": "https://www.escortmumbaii.in/entity/delhi",
+        "name": "Delhi",
+        "alternateName": ["New Delhi", "NCR"],
+        "description": "National capital region with extensive escort services network",
+        "containedInPlace": {
+          "@type": "AdministrativeArea",
+          "name": "Delhi"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+
+BOOK EASE SEO AUDIT REPORT
+=========================
+Generated: 2026-01-14T20:06:05.735Z
+Audited URL: undefined
+Overall Score: 70/100 (C)
+
+SUMMARY
+-------
+Total Issues: 2
+Critical Issues: 1
+High Priority Issues: 0
+
+DETAILED FINDINGS
+-----------------
+
+CRITICAL ISSUES:
+- Blocking all crawlers - will hurt SEO
+
+
+MEDIUM ISSUES:
+- Sitemap not found at /sitemap-index.xml
+
+
+RECOMMENDATIONS:
+---------------
+
+Critical Issues Needing Immediate Attention:
+- Blocking all crawlers - will hurt SEO

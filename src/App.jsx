@@ -26,6 +26,11 @@ import Network from './pages/Network';
 import Mumbai from './pages/Mumbai';
 import Delhi from './pages/Delhi';
 import Bangalore from './pages/Bangalore';
+// Pillar Pages
+import VerifiedEscortServices from './pages/VerifiedEscortServices';
+import MumbaiEscortServices from './pages/MumbaiEscortServices';
+import MassageEscortServices from './pages/MassageEscortServices';
+import CompanionEscortServices from './pages/CompanionEscortServices';
 import { trackPageView } from './utils/analytics';
 
 
@@ -81,7 +86,13 @@ function App() {
             <Route path="/mumbai" element={<Mumbai />} />
             <Route path="/delhi" element={<Delhi />} />
             <Route path="/bangalore" element={<Bangalore />} />
-            
+
+            {/* Pillar Pages */}
+            <Route path="/verified-escort-services" element={<VerifiedEscortServices />} />
+            <Route path="/mumbai-escort-services" element={<MumbaiEscortServices />} />
+            <Route path="/delhi-escort-services" element={<Delhi />} />
+            <Route path="/massage-escort-services" element={<MassageEscortServices />} />
+            <Route path="/companion-escort-services" element={<CompanionEscortServices />} />
 
             {/* 404 Route */}
             <Route path="*" element={<Home />} />

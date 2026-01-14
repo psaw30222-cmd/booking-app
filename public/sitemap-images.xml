@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://bookease.com/mumbai</loc>
+    
+    <image:image>
+      <image:loc>https://bookease.com/images/profile-sample.jpg</image:loc>
+      <image:caption>Professional companion service provider</image:caption>
+      <image:title>Verified Escort Profile</image:title>
+      <image:license>https://bookease.com/terms-and-conditions</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://bookease.com/images/service-massage.jpg</image:loc>
+      <image:caption>Relaxing massage therapy service</image:caption>
+      <image:title>Massage Therapy Services</image:title>
+      
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bookease.com/delhi</loc>
+    
+    <image:image>
+      <image:loc>https://bookease.com/images/profile-sample.jpg</image:loc>
+      <image:caption>Professional companion service provider</image:caption>
+      <image:title>Verified Escort Profile</image:title>
+      <image:license>https://bookease.com/terms-and-conditions</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://bookease.com/images/service-massage.jpg</image:loc>
+      <image:caption>Relaxing massage therapy service</image:caption>
+      <image:title>Massage Therapy Services</image:title>
+      
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bookease.com/bangalore</loc>
+    
+    <image:image>
+      <image:loc>https://bookease.com/images/profile-sample.jpg</image:loc>
+      <image:caption>Professional companion service provider</image:caption>
+      <image:title>Verified Escort Profile</image:title>
+      <image:license>https://bookease.com/terms-and-conditions</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://bookease.com/images/service-massage.jpg</image:loc>
+      <image:caption>Relaxing massage therapy service</image:caption>
+      <image:title>Massage Therapy Services</image:title>
+      
+    </image:image>
+  </url>
+</urlset>

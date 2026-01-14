@@ -1,0 +1,297 @@
+{
+  "userIntentMapping": {
+    "lastUpdated": "2026-01-14",
+    "version": "2.0",
+    "framework": "TOFU-MOFU-BOFU content clustering with AI-driven intent recognition"
+  },
+  "userIntents": {
+    "informational": {
+      "stage": "TOFU",
+      "queries": [
+        "what are escort services",
+        "how to find verified escorts",
+        "escort safety guidelines",
+        "types of escort services",
+        "escort pricing guide",
+        "how to verify escort authenticity",
+        "safest areas for escort meetings",
+        "escort industry explained"
+      ],
+      "contentClusters": [
+        {
+          "clusterName": "Safety & Verification",
+          "topics": [
+            "escort verification process",
+            "safety tips for clients",
+            "red flags to avoid",
+            "secure booking methods"
+          ],
+          "contentFormat": "educational articles, safety guides, FAQ pages",
+          "targetKeywords": [
+            "escort safety",
+            "verification process",
+            "safe booking",
+            "authentic escorts"
+          ]
+        },
+        {
+          "clusterName": "Service Information",
+          "topics": [
+            "types of services offered",
+            "pricing structures",
+            "location coverage",
+            "booking procedures"
+          ],
+          "contentFormat": "informational pages, service guides, pricing explanations",
+          "targetKeywords": [
+            "escort services",
+            "pricing guide",
+            "service types",
+            "booking process"
+          ]
+        }
+      ]
+    },
+    "navigational": {
+      "stage": "MOFU",
+      "queries": [
+        "bookease",
+        "bookease mumbai",
+        "bookease delhi",
+        "bookease bangalore",
+        "escort booking platform",
+        "verified escort sites"
+      ],
+      "contentClusters": [
+        {
+          "clusterName": "Brand Discovery",
+          "topics": [
+            "platform features",
+            "trust indicators",
+            "verification process",
+            "customer support"
+          ],
+          "contentFormat": "landing pages, about pages, trust signals",
+          "targetKeywords": [
+            "bookease",
+            "escort platform",
+            "verified booking",
+            "trusted service"
+          ]
+        }
+      ]
+    },
+    "commercialInvestigation": {
+      "stage": "MOFU",
+      "queries": [
+        "best escort services in mumbai",
+        "verified escorts near me",
+        "premium companion services",
+        "discreet escort booking",
+        "escort reviews delhi",
+        "reliable escort platforms"
+      ],
+      "contentClusters": [
+        {
+          "clusterName": "Comparison & Review",
+          "topics": [
+            "platform comparisons",
+            "feature reviews",
+            "pricing comparisons",
+            "user testimonials"
+          ],
+          "contentFormat": "comparison pages, review articles, testimonial galleries",
+          "targetKeywords": [
+            "best escorts",
+            "escort reviews",
+            "platform comparison",
+            "verified services"
+          ]
+        }
+      ]
+    },
+    "transactional": {
+      "stage": "BOFU",
+      "queries": [
+        "book escort online",
+        "hire companion services",
+        "escort booking form",
+        "schedule escort visit",
+        "find escorts in mumbai",
+        "hire mumbai escorts"
+      ],
+      "contentClusters": [
+        {
+          "clusterName": "Booking & Purchase",
+          "topics": [
+            "booking forms",
+            "payment methods",
+            "scheduling",
+            "confirmation process"
+          ],
+          "contentFormat": "booking pages, checkout flows, confirmation screens",
+          "targetKeywords": [
+            "book escorts",
+            "hire companions",
+            "escort booking",
+            "schedule appointment"
+          ]
+        }
+      ]
+    }
+  },
+  "contentClusteringStrategy": {
+    "thematicClusters": [
+      {
+        "clusterName": "Geographic Clusters",
+        "pages": [
+          "mumbai",
+          "delhi", 
+          "bangalore",
+          "pune",
+          "hyderabad"
+        ],
+        "intentTypes": ["informational", "transactional"],
+        "contentHierarchy": {
+          "root": "/",
+          "city": "/:city",
+          "area": "/:city/:area",
+          "profile": "/:city/:area/profile/:id"
+        }
+      },
+      {
+        "clusterName": "Service Type Clusters",
+        "pages": [
+          "escort services",
+          "companion services",
+          "premium services",
+          "specialized services"
+        ],
+        "intentTypes": ["informational", "commercialInvestigation"],
+        "contentHierarchy": {
+          "category": "/services/:category",
+          "subcategory": "/services/:category/:subcategory"
+        }
+      },
+      {
+        "clusterName": "Educational Clusters",
+        "pages": [
+          "safety guides",
+          "booking tips",
+          "verification guides",
+          "safety tips"
+        ],
+        "intentTypes": ["informational"],
+        "contentHierarchy": {
+          "guides": "/guides/:topic",
+          "blog": "/blog/:category"
+        }
+      }
+    ]
+  },
+  "aiDrivenIntentRecognition": {
+    "semanticPatterns": [
+      {
+        "pattern": "how to *",
+        "intent": "informational",
+        "action": "create educational content",
+        "examples": [
+          "how to find verified escorts",
+          "how to book safely",
+          "how to verify authenticity"
+        ]
+      },
+      {
+        "pattern": "* near me",
+        "intent": "local transactional",
+        "action": "optimize local landing pages",
+        "examples": [
+          "escorts near me",
+          "companion services near me",
+          "verified escorts near me"
+        ]
+      },
+      {
+        "pattern": "best * in *",
+        "intent": "commercial investigation",
+        "action": "create comparison content",
+        "examples": [
+          "best escorts in mumbai",
+          "best companion services in delhi"
+        ]
+      },
+      {
+        "pattern": "book * online",
+        "intent": "transactional",
+        "action": "optimize conversion pages",
+        "examples": [
+          "book escort online",
+          "hire companion online"
+        ]
+      }
+    ],
+    "entityRecognition": {
+      "locationEntities": [
+        "mumbai",
+        "delhi",
+        "bangalore", 
+        "pune",
+        "hyderabad",
+        "chennai",
+        "kolkata"
+      ],
+      "serviceEntities": [
+        "escorts",
+        "companions",
+        "adult services",
+        "companion services"
+      ],
+      "attributeEntities": [
+        "verified",
+        "premium",
+        "discreet",
+        "professional",
+        "safe"
+      ]
+    }
+  },
+  "contentMappingMatrix": {
+    "funnelStage": {
+      "TOFU": {
+        "contentTypes": ["blog posts", "guides", "FAQs", "safety tips"],
+        "primaryGoals": ["awareness", "education", "trust building"],
+        "metrics": ["page views", "time on page", "bounce rate"]
+      },
+      "MOFU": {
+        "contentTypes": ["comparison pages", "reviews", "location guides"],
+        "primaryGoals": ["engagement", "lead generation", "brand consideration"],
+        "metrics": ["click-through rate", "conversion to inquiry", "social shares"]
+      },
+      "BOFU": {
+        "contentTypes": ["booking pages", "profiles", "checkout flows"],
+        "primaryGoals": ["conversion", "transaction completion", "retention"],
+        "metrics": ["conversion rate", "booking completion", "repeat visits"]
+      }
+    }
+  },
+  "implementationPlan": {
+    "immediateActions": [
+      "Create location-specific FAQ pages",
+      "Develop safety and verification guides",
+      "Build comparison tables for service types",
+      "Optimize booking funnel pages"
+    ],
+    "shortTerm": [
+      "Implement AI-driven content recommendations",
+      "Create dynamic landing pages based on search intent",
+      "Build location-based content clusters",
+      "Develop user journey mapping"
+    ],
+    "longTerm": [
+      "Deploy machine learning for intent prediction",
+      "Create personalized content experiences",
+      "Implement voice search optimization",
+      "Build predictive content models"
+    ]
+  }
+}

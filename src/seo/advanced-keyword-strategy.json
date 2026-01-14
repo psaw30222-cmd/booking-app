@@ -1,0 +1,231 @@
+{
+  "strategyOverview": {
+    "lastUpdated": "2026-01-14",
+    "version": "2.0",
+    "approach": "AI-powered, intent-based, entity-focused keyword strategy"
+  },
+  "keywordClusters": {
+    "commercialIntent": {
+      "primary": [
+        "escorts in india",
+        "verified escorts near me",
+        "premium companion services",
+        "discreet escort booking",
+        "adult services directory"
+      ],
+      "secondary": [
+        "call girls in mumbai",
+        "delhi escort services",
+        "bangalore companions",
+        "professional escorts",
+        "safe booking platforms"
+      ],
+      "longTail": [
+        "verified escorts in mumbai andheri",
+        "discreet companion services delhi",
+        "premium escorts bangalore koramangala",
+        "24/7 escort services in pune",
+        "verified call girls hyderabad"
+      ]
+    },
+    "informationalIntent": {
+      "primary": [
+        "how to find verified escorts",
+        "escort safety guidelines",
+        "companion service reviews",
+        "booking adult services safely",
+        "escort verification process"
+      ],
+      "secondary": [
+        "mumbai escort areas",
+        "delhi red light districts",
+        "bangalore escort locations",
+        "escort pricing guide",
+        "independent vs agency escorts"
+      ],
+      "longTail": [
+        "safest areas for escorts in mumbai",
+        "how to verify escort authenticity",
+        "red light district map delhi",
+        "best escort agencies in bangalore",
+        "escort booking process explained"
+      ]
+    },
+    "navigationalIntent": {
+      "primary": [
+        "bookease",
+        "book ease escorts",
+        "bookease mumbai",
+        "bookease delhi",
+        "bookease bangalore"
+      ],
+      "secondary": [
+        "escort directory india",
+        "companion finder app",
+        "adult services website",
+        "escort booking platform",
+        "verified escort listings"
+      ]
+    },
+    "transactionalIntent": {
+      "primary": [
+        "book escort online",
+        "hire companion services",
+        "escort booking form",
+        "schedule escort visit",
+        "escort appointment booking"
+      ],
+      "secondary": [
+        "escort hourly rates",
+        "escort packages pricing",
+        "overnight escort services",
+        "escort service booking",
+        "companion hire cost"
+      ]
+    }
+  },
+  "entityBasedKeywords": {
+    "locations": {
+      "tier1Cities": [
+        "mumbai escorts",
+        "delhi escorts", 
+        "bangalore escorts",
+        "kolkata escorts",
+        "chennai escorts"
+      ],
+      "tier2Cities": [
+        "pune escorts",
+        "hyderabad escorts",
+        "ahmedabad escorts",
+        "jaipur escorts",
+        "lucknow escorts"
+      ],
+      "specificAreas": {
+        "mumbai": [
+          "andheri escorts",
+          "bandra escorts",
+          "juhu escorts",
+          "powai escorts",
+          "colaba escorts"
+        ],
+        "delhi": [
+          "connaught place escorts",
+          "karol bagh escorts",
+          "saket escorts",
+          "south delhi escorts",
+          "central delhi escorts"
+        ],
+        "bangalore": [
+          "koramangala escorts",
+          "indiranagar escorts",
+          "whitefield escorts",
+          "mg road escorts",
+          "jayanagar escorts"
+        ]
+      }
+    },
+    "serviceTypes": [
+      "independent escorts",
+      "agency escorts",
+      "vip escorts",
+      "luxury companions",
+      "high profile escorts"
+    ],
+    "demographics": [
+      "young escorts",
+      "mature escorts",
+      "college escorts",
+      "professional escorts",
+      "housewife escorts"
+    ]
+  },
+  "voiceSearchKeywords": {
+    "questionFormat": [
+      "where can i find verified escorts",
+      "how much do escorts charge",
+      "are escort services safe",
+      "what areas have escorts",
+      "how to book an escort"
+    ],
+    "localQueries": [
+      "escorts near me right now",
+      "best escorts in my city",
+      "verified escorts nearby",
+      "24 hour escort service",
+      "emergency escort booking"
+    ]
+  },
+  "seasonalTrending": {
+    "festivalRelated": [
+      "valentines day escorts",
+      "new year escorts",
+      "christmas companion services",
+      "diwali escort bookings"
+    ],
+    "eventDriven": [
+      "conference escorts",
+      "business trip companions",
+      "tourist escort services",
+      "wedding reception escorts"
+    ]
+  },
+  "competitorGapKeywords": {
+    "untargetedOpportunities": [
+      "verified independent escorts",
+      "luxury companion services india",
+      "discreet adult services",
+      "premium escort directory",
+      "trusted escort platform"
+    ],
+    "emergingTrends": [
+      "ai verified escorts",
+      "blockchain escort platforms",
+      "crypto payment escorts",
+      "virtual companion services"
+    ]
+  },
+  "intentMapping": {
+    "TOFU": {
+      "awarenessStage": [
+        "what are escort services",
+        "escort industry explained",
+        "companion services definition",
+        "adult entertainment guide"
+      ],
+      "researchStage": [
+        "how to choose escorts",
+        "escort safety tips",
+        "verifying escort authenticity",
+        "escort booking best practices"
+      ]
+    },
+    "MOFU": {
+      "considerationStage": [
+        "compare escort services",
+        "escort agency vs independent",
+        "escort pricing comparison",
+        "escort service reviews"
+      ],
+      "evaluationStage": [
+        "best escort directories",
+        "verified escort platforms",
+        "trusted booking sites",
+        "reliable escort services"
+      ]
+    },
+    "BOFU": {
+      "decisionStage": [
+        "book verified escorts",
+        "hire companion services",
+        "escort booking platform",
+        "secure escort booking"
+      ],
+      "conversionStage": [
+        "verified escort booking",
+        "instant escort booking",
+        "24/7 escort service",
+        "emergency escort hire"
+      ]
+    }
+  }
+}

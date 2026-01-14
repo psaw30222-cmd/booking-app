@@ -1,0 +1,125 @@
+{
+  "aiContentEnhancement": {
+    "semanticKeywords": {
+      "primaryTopics": [
+        "verified escorts",
+        "companion services",
+        "adult entertainment",
+        "discreet booking",
+        "safe services"
+      ],
+      "lsiTerms": [
+        "independent escorts",
+        "verified profiles",
+        "professional companions",
+        "discreet meetings",
+        "safe transactions",
+        "trusted platform",
+        "secure booking",
+        "confidential service",
+        "premium companions",
+        "verified authenticity"
+      ],
+      "locationModifiers": [
+        "in Mumbai",
+        "in Delhi",
+        "in Bangalore",
+        "across India",
+        "throughout India",
+        "in major cities",
+        "nationwide service"
+      ],
+      "temporalKeywords": [
+        "available tonight",
+        "24/7 service",
+        "immediate booking",
+        "same day service",
+        "real-time availability"
+      ],
+      "trustSignals": [
+        "ID verified",
+        "background checked",
+        "authentic photos",
+        "verified reviews",
+        "trusted platform",
+        "secure payment",
+        "confidential booking"
+      ]
+    },
+    "topicClusters": {
+      "mainCluster": {
+        "pillarTopic": "Verified Escort Services in India",
+        "clusterTopics": [
+          "How to Find Verified Escorts",
+          "Escort Safety Guidelines",
+          "Booking Verified Escorts Online",
+          "Escort Services by City",
+          "Independent vs Agency Escorts"
+        ]
+      },
+      "cityClusters": {
+        "mumbai": {
+          "pillarTopic": "Mumbai Escort Services",
+          "clusterTopics": [
+            "Andheri Escorts",
+            "Bandra Escorts",
+            "Juhu Escorts",
+            "Mumbai Hotel Escorts",
+            "Mumbai Incall Services"
+          ]
+        },
+        "delhi": {
+          "pillarTopic": "Delhi Escort Services",
+          "clusterTopics": [
+            "Connaught Place Escorts",
+            "Karol Bagh Escorts",
+            "Delhi NCR Escorts",
+            "Delhi Hotel Escorts",
+            "Delhi Outcall Services"
+          ]
+        }
+      },
+      "serviceClusters": {
+        "massage": {
+          "pillarTopic": "Massage Escort Services",
+          "clusterTopics": [
+            "Therapeutic Massage Escorts",
+            "Relaxation Massage Services",
+            "Professional Massage Therapy",
+            "Stress Relief Massage",
+            "Body to Body Massage"
+          ]
+        },
+        "companion": {
+          "pillarTopic": "Companion Escort Services",
+          "clusterTopics": [
+            "Social Event Companions",
+            "Travel Companion Services",
+            "Dinner Date Escorts",
+            "VIP Companion Services",
+            "Dating Companion Escorts"
+          ]
+        }
+      }
+    },
+    "contentOptimizationTemplates": {
+      "heroSection": {
+        "template": "[PRIMARY_KEYWORD] [LOCATION] [YEAR] — [VALUE_PROPOSITION] [NUMERIC_DATA]. [BENEFIT_STATEMENT]. [CTA_PHRASE].",
+        "example": "Verified Escorts India 2026 — Premium Companion Services Across 500+ Cities. Browse 2000+ verified profiles of escorts and companions. Book premium companions in Mumbai, Delhi, Bangalore. 18+ only."
+      },
+      "featureList": {
+        "template": "[FEATURE_BENEFIT]: [DETAILED_DESCRIPTION] with [ADDITIONAL_VALUE]",
+        "example": "Verified Profiles: All companions are ID verified with authentic photos, ensuring complete transparency and trust for safe bookings."
+      },
+      "serviceDescription": {
+        "template": "Our [SERVICE_TYPE] in [LOCATION] offers [PRIMARY_BENEFIT] with [ADDITIONAL_FEATURES]. [TRUST_SIGNAL] and [SAFETY_GUARANTEE] make [BRAND_NAME] the [SUPERLATIVE] choice for [TARGET_AUDIENCE].",
+        "example": "Our escort services in Mumbai offer premium companionship with verified authenticity. ID-checked profiles and discreet booking make BookEase the most trusted choice for discerning clients."
+      }
+    },
+    "aiWritingPrompts": {
+      "contentExpansion": "Expand this section with 3-4 additional semantic keywords naturally integrated throughout the content while maintaining readability and flow.",
+      "keywordIntegration": "Integrate these LSI terms naturally: [VERIFIED_PROFILES], [DISCREET_SERVICE], [PROFESSIONAL_COMPANIONS], [SAFE_BOOKING] throughout the content.",
+      "topicClustering": "Organize content around these related topics: [MAIN_TOPIC], [SUBTOPIC_1], [SUBTOPIC_2], [SUBTOPIC_3] to create comprehensive coverage."
+    }
+  }
+}

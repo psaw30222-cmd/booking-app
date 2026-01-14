@@ -22,9 +22,7 @@ const Booking = () => {
   const navigate = useNavigate();
   const { currentBooking, updateBooking } = useBooking();
 
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedTime, setSelectedTime] = useState(null);
-  const [selectedBarber, setSelectedBarber] = useState(null);
+
 
   // Redirect if no booking started
   if (!currentBooking || !currentBooking.service || !currentBooking.variant) {

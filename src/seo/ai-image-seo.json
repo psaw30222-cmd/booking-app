@@ -1,0 +1,79 @@
+{
+  "aiImageSeo": {
+    "altTextTemplates": {
+      "profileImages": {
+        "template": "Verified [SERVICE_TYPE] [LOCATION] - [ATTRIBUTES] - [VERIFICATION_STATUS]",
+        "examples": [
+          "Verified escort Mumbai - Professional companion Andheri - ID verified profile",
+          "Verified massage therapist Delhi - Therapeutic services CP - Background checked",
+          "Verified dating companion Bangalore - Social events Koramangala - Authentic photos"
+        ]
+      },
+      "locationImages": {
+        "template": "[LOCATION] escort services - Verified companions in [AREA] - [SERVICE_TYPE]",
+        "examples": [
+          "Mumbai escort services - Verified companions in Andheri - Premium dating",
+          "Delhi escort services - Verified companions in Connaught Place - Professional massage",
+          "Bangalore escort services - Verified companions in Koramangala - Social companionship"
+        ]
+      },
+      "serviceImages": {
+        "template": "[SERVICE_TYPE] escorts India - Verified professional [SPECIFIC_SERVICE] - [LOCATION]",
+        "examples": [
+          "Massage escorts India - Verified professional therapeutic massage - Mumbai",
+          "Companion escorts India - Verified professional social events - Delhi",
+          "Premium escorts India - Verified luxury companionship - Bangalore"
+        ]
+      }
+    },
+    "fileNameOptimization": {
+      "structure": "[service-type]-[location]-[descriptor]-[verification]-[year].[extension]",
+      "examples": [
+        "verified-escort-mumbai-professional-andheri-2026.jpg",
+        "massage-therapist-delhi-verified-cp-2026.jpg",
+        "dating-companion-bangalore-social-koramangala-2026.jpg"
+      ]
+    },
+    "lazyLoadingImplementation": {
+      "reactComponent": {
+        "componentName": "LazyImage",
+        "props": {
+          "src": "image source URL",
+          "alt": "descriptive alt text",
+          "loading": "lazy",
+          "decoding": "async",
+          "sizes": "responsive sizes attribute"
+        },
+        "example": "<LazyImage src='/images/verified-escort-mumbai-2026.jpg' alt='Verified escort Mumbai - Professional companion Andheri - ID verified profile' loading='lazy' decoding='async' sizes='(max-width: 768px) 100vw, 50vw' />"
+      }
+    },
+    "imageCompressionStandards": {
+      "formats": {
+        "modern": ["webp", "avif"],
+        "fallback": ["jpg", "png"]
+      },
+      "qualitySettings": {
+        "heroImages": "80-85%",
+        "galleryImages": "75-80%",
+        "thumbnails": "70-75%"
+      },
+      "dimensions": {
+        "heroDesktop": "1920x1080",
+        "heroMobile": "768x432",
+        "gallery": "600x800",
+        "thumbnail": "300x400"
+      }
+    },
+    "aiPromptForAltText": {
+      "generationPrompt": "Generate descriptive alt text for an image showing [IMAGE_CONTENT] in [LOCATION] with [SERVICE_TYPE]. Include verification status and professional attributes. Keep under 125 characters.",
+      "optimizationGuidelines": [
+        "Include primary keyword near start",
+        "Add location specificity",
+        "Mention service type",
+        "Include verification status",
+        "Describe visual elements naturally",
+        "Keep under 125 characters for accessibility"
+      ]
+    }
+  }
+}

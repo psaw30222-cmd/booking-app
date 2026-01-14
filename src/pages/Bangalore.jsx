@@ -5,6 +5,8 @@ import Header from '../components/Header';
 import ServiceCard from '../components/ServiceCard';
 import { services } from '../data/services';
 
+// Enhanced local SEO components
+
 const phone = "9999999999";
 
 const Bangalore = () => {
@@ -12,36 +14,38 @@ const Bangalore = () => {
   const bangaloreServices = services.slice(0, 6);
 
   const popularAreas = [
-    { name: "Andheri", slug: "andheri", count: 150 },
-    { name: "Bandra", slug: "bandra", count: 120 },
-    { name: "Juhu", slug: "juhu", count: 95 },
-    { name: "Powai", slug: "powai", count: 80 },
-    { name: "Colaba", slug: "colaba", count: 75 },
-    { name: "Worli", slug: "worli", count: 65 },
-    { name: "Lower Parel", slug: "lower-parel", count: 60 },
-    { name: "Malad", slug: "malad", count: 55 },
+    { name: "Koramangala", slug: "koramangala", count: 150 },
+    { name: "Indiranagar", slug: "indiranagar", count: 120 },
+    { name: "Whitefield", slug: "whitefield", count: 95 },
+    { name: "MG Road", slug: "mg-road", count: 80 },
+    { name: "Jayanagar", slug: "jayanagar", count: 75 },
+    { name: "HSR Layout", slug: "hsr-layout", count: 65 },
+    { name: "BTM Layout", slug: "btm-layout", count: 60 },
+    { name: "Electronics City", slug: "electronics-city", count: 55 },
   ];
 
-  const structuredData = {
+  // Enhanced Local Business Schema for Bangalore
+  const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "BookEase Mumbai - Adult Companion Services",
-    "image": "https://bookease.com/mumbai-banner.jpg",
-    "description": "Premium adult companion and escort services in Mumbai. Verified profiles, discreet service, 24/7 availability.",
+    "@type": "AdultEntertainment",
+    "name": "BookEase Bangalore Escorts",
+    "image": "https://bookease.com/bangalore-banner.jpg",
+    "description": "Verified escort and companion services in Bangalore with 400+ profiles across Koramangala, Indiranagar, Whitefield and more areas",
     "priceRange": "₹₹₹",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Mumbai",
-      "addressRegion": "Maharashtra",
-      "postalCode": "400001",
+      "streetAddress": "Multiple locations",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560001",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 19.0760,
-      "longitude": 72.8777
+      "latitude": 12.9716,
+      "longitude": 77.5946
     },
-    "url": "https://bookease.com/mumbai",
+    "url": "https://bookease.com/bangalore",
     "telephone": `+91-${phone}`,
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -51,14 +55,43 @@ const Bangalore = () => {
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "327",
+      "ratingValue": "4.7",
+      "reviewCount": "289",
       "bestRating": "5",
       "worstRating": "1"
+    },
+    "serviceArea": {
+      "@type": "Place",
+      "name": "Greater Bangalore Area"
     }
   };
-
-  const breadcrumbData = {
+  
+  // Location-specific FAQ schema for AEO
+  const locationFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are there 24/7 escort services available in Bangalore?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Bangalore offers 24/7 escort services through verified platforms like BookEase. Many companions are available round-the-clock, particularly in areas like Koramangala, Indiranagar, and Whitefield with active nightlife scenes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the best areas for meeting escorts in Bangalore?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Koramangala, Indiranagar, Whitefield, MG Road, and Jayanagar are among the best areas for meeting escorts in Bangalore. These locations offer good infrastructure, hotels, and privacy for discreet meetings."
+        }
+      }
+    ]
+  };
+  
+  // Breadcrumb schema for local navigation
+  const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -66,59 +99,41 @@ const Bangalore = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://bookease.com"
+        "item": "https://www.escortmumbaii.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Mumbai",
-        "item": "https://bookease.com/mumbai"
+        "name": "Bangalore",
+        "item": "https://www.escortmumbaii.in/bangalore"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Escorts",
+        "item": "https://www.escortmumbaii.in/bangalore/escorts"
       }
     ]
   };
 
+
+
   return (
     <div className="min-h-screen bg-neutral-50">
-      <Helmet>
-        <title>Escorts in Bangalore — Verified Companions & Local Services | BookEase</title>
-        <meta name="description" content="Browse verified companion profiles in Bangalore. Discreet bookings and professional services in Koramangala, Indiranagar, Whitefield." />
-        <meta name="keywords" content="escorts Bangalore, Bangalore companions, verified escorts, escorts in Bangalore" />
-        <link rel="canonical" href="https://bookease.com/bangalore" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Escorts in Bangalore — Verified Companions | BookEase" />
-        <meta property="og:description" content="Find verified companions in Bangalore. Discreet, secure bookings and trusted providers in major localities." />
-        <meta property="og:url" content="https://bookease.com/bangalore" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://bookease.com/bangalore-og.jpg" />
-        <meta property="og:locale" content="en_IN" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Escorts in Bangalore — BookEase" />
-        <meta name="twitter:description" content="Verified companion profiles in Bangalore. Discreet and professional services in Koramangala, Indiranagar, and Whitefield." />
-        <meta name="twitter:image" content="https://bookease.com/bangalore-twitter.jpg" />
-        
-        {/* Alternate Languages */}
-        <link rel="alternate" hreflang="en-in" href="https://bookease.com/bangalore" />
-        <link rel="alternate" hreflang="en" href="https://bookease.com/bangalore" />
-        
-        {/* Geo Tags */}
-        <meta name="geo.region" content="IN-KA" />
-        <meta name="geo.placename" content="Bangalore" />
-        <meta name="geo.position" content="12.9716;77.5946" />
-        <meta name="ICBM" content="12.9716, 77.5946" />
-        
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(breadcrumbData)}
-        </script>
-      </Helmet>
+      <SEO
+        title="Escorts in Bangalore — Verified Companions & Discreet Booking | BookEase"
+        description="Browse 400+ verified companion profiles in Bangalore (Koramangala, Indiranagar, Whitefield). Discreet, safe, and professional bookings with verified providers."
+        canonical="https://www.escortmumbaii.in/bangalore"
+        image="https://www.escortmumbaii.in/bangalore-og.jpg"
+        entityType="localBusiness"
+        lang="en-IN"
+        jsonLd={[localBusinessSchema]}
+        faqSchema={locationFaqSchema}
+        breadcrumbSchema={breadcrumbSchema}
+        meta={[{ name: 'keywords', content: 'bangalore escorts, escorts in bangalore, verified escorts bangalore, koramangala escorts, indiranagar escorts, whitefield escorts' }]}
+      />
 
-      <Header showBack title="Mumbai Escorts" />
+      <Header showBack title="Bangalore Escorts" />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-pink-600 to-pink-700 text-white py-12">
@@ -126,7 +141,7 @@ const Bangalore = () => {
           <nav className="text-sm mb-4 opacity-90">
             <Link to="/" className="hover:underline">Home</Link> 
             <span className="mx-2">›</span> 
-            <span>Mumbai</span>
+            <span>Bangalore</span>
           </nav>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -167,7 +182,7 @@ const Bangalore = () => {
         {/* Popular Areas */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-neutral-900 mb-6">
-            Popular Areas in Mumbai
+            Popular Areas in Bangalore
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {popularAreas.map((area) => (
@@ -193,7 +208,7 @@ const Bangalore = () => {
         {/* Services */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-neutral-900 mb-6">
-            Available Services in Mumbai
+            Available Services in Bangalore
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {bangaloreServices.map((service) => (

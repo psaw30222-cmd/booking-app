@@ -1,0 +1,135 @@
+{
+  "aiHeadingOptimization": {
+    "homepage": {
+      "currentIssues": [
+        "H1 tag is in hero section but could be more keyword-rich",
+        "Missing H2 tags for main content sections",
+        "No semantic heading hierarchy for SEO"
+      ],
+      "optimizedStructure": {
+        "h1": "Verified Escorts India 2026 — Premium Companion Services Across 500+ Cities",
+        "h2Sections": [
+          "Browse by City",
+          "Featured Services",
+          "Frequently Asked Questions",
+          "About BookEase - India's Premier Adult Services Directory"
+        ],
+        "h3Subsections": [
+          "Why Choose BookEase?",
+          "Cities We Serve",
+          "How It Works"
+        ],
+        "semanticKeywords": [
+          "verified escorts India",
+          "premium companion services",
+          "500+ cities",
+          "safe discreet booking",
+          "2000+ verified profiles"
+        ]
+      }
+    },
+    "cityPages": {
+      "mumbai": {
+        "optimizedStructure": {
+          "h1": "Mumbai Escorts 2026 — 500+ Verified Companions in Andheri, Bandra, Juhu",
+          "h2Sections": [
+            "Popular Areas in Mumbai",
+            "Available Services in Mumbai",
+            "About Escort Services in Mumbai",
+            "Frequently Asked Questions"
+          ],
+          "h3Subsections": [
+            "Why Choose BookEase Mumbai?",
+            "Popular Services in Mumbai",
+            "Coverage Areas",
+            "How to Book",
+            "Safety & Discretion"
+          ],
+          "semanticKeywords": [
+            "Mumbai escorts 2026",
+            "verified Mumbai companions",
+            "Andheri escorts",
+            "Bandra escorts",
+            "Juhu escorts",
+            "available tonight"
+          ]
+        }
+      },
+      "delhi": {
+        "optimizedStructure": {
+          "h1": "Delhi Escorts 2026 — 450+ Verified Companions in Connaught Place, Karol Bagh NCR",
+          "h2Sections": [
+            "Popular Areas in Delhi",
+            "Available Services in Delhi",
+            "About Escort Services in Delhi",
+            "Frequently Asked Questions"
+          ],
+          "h3Subsections": [
+            "Why Choose BookEase Delhi?",
+            "Popular Services in Delhi",
+            "Coverage Areas",
+            "How to Book",
+            "Safety & Discretion"
+          ],
+          "semanticKeywords": [
+            "Delhi escorts 2026",
+            "verified Delhi companions",
+            "Connaught Place escorts",
+            "Karol Bagh escorts",
+            "NCR escorts",
+            "available tonight"
+          ]
+        }
+      }
+    },
+    "servicePages": {
+      "massage": {
+        "optimizedStructure": {
+          "h1": "Massage Escorts India — Professional Therapeutic Sessions with Verified Companions",
+          "h2Sections": [
+            "Benefits of Professional Massage Therapy",
+            "Our Verified Massage Companions",
+            "Types of Massage Services",
+            "Booking Process",
+            "Safety & Hygiene Standards"
+          ],
+          "h3Subsections": [
+            "Relaxation and Stress Relief",
+            "Therapeutic Benefits",
+            "Professional Techniques",
+            "Swedish Massage",
+            "Deep Tissue Massage",
+            "Hot Stone Therapy"
+          ],
+          "semanticKeywords": [
+            "massage escorts India",
+            "professional massage therapy",
+            "verified massage companions",
+            "therapeutic sessions",
+            "stress relief massage"
+          ]
+        }
+      }
+    },
+    "aiOptimizationGuidelines": {
+      "headingHierarchy": [
+        "H1: Primary keyword + location + year + value proposition",
+        "H2: Main content sections with secondary keywords",
+        "H3: Detailed subsections with supporting keywords",
+        "H4+: Granular details and specifications"
+      ],
+      "keywordPlacement": [
+        "Primary keyword in H1 within first 10 words",
+        "Secondary keywords in H2 tags",
+        "LSI terms and semantic keywords in H3+",
+        "Natural language flow with keyword integration"
+      ],
+      "userIntentAlignment": [
+        "Informational: How-to, guide, explanation content",
+        "Transactional: Booking, pricing, availability keywords",
+        "Local: Area-specific terms and location modifiers",
+        "Trust-building: Verification, safety, discretion terms"
+      ]
+    }
+  }
+}

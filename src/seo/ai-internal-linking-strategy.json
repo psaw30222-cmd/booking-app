@@ -1,0 +1,174 @@
+{
+  "aiInternalLinkingStrategy": {
+    "linkingPrinciples": {
+      "contextualRelevance": "Links should be placed naturally within content where they add value to user experience",
+      "anchorTextOptimization": "Use descriptive, keyword-rich anchor text that matches target page content",
+      "linkDiversity": "Balance between homepage, city pages, service pages, and support content",
+      "userIntentMatching": "Link to pages that satisfy user's next logical question or need"
+    },
+    "homepageLinking": {
+      "outboundLinks": [
+        {
+          "target": "/mumbai",
+          "anchorText": "Mumbai Escorts",
+          "context": "Top cities section - direct link to major market",
+          "semanticKeywords": ["Mumbai escorts", "verified Mumbai companions", "Andheri escorts"]
+        },
+        {
+          "target": "/delhi",
+          "anchorText": "Delhi Escorts",
+          "context": "Top cities section - direct link to major market",
+          "semanticKeywords": ["Delhi escorts", "verified Delhi companions", "Connaught Place escorts"]
+        },
+        {
+          "target": "/bangalore",
+          "anchorText": "Bangalore Escorts",
+          "context": "Top cities section - direct link to major market",
+          "semanticKeywords": ["Bangalore escorts", "verified Bangalore companions", "Koramangala escorts"]
+        },
+        {
+          "target": "/help-center",
+          "anchorText": "View All FAQs",
+          "context": "FAQ section - comprehensive safety and booking information",
+          "semanticKeywords": ["escort help center", "safety guide", "booking tips"]
+        }
+      ],
+      "semanticLinkOpportunities": [
+        {
+          "triggerWords": ["verified profiles", "ID verified"],
+          "targetPage": "/safety",
+          "anchorText": "verified authenticity guarantees",
+          "reasoning": "Users interested in verification will want detailed safety information"
+        },
+        {
+          "triggerWords": ["24/7 service", "availability"],
+          "targetPage": "/help-center",
+          "anchorText": "real-time availability updates",
+          "reasoning": "Availability questions lead to booking process information"
+        }
+      ]
+    },
+    "cityPageLinking": {
+      "mumbai": {
+        "outboundLinks": [
+          {
+            "target": "/delhi",
+            "anchorText": "Delhi Escorts",
+            "context": "Other cities section - cross-market promotion",
+            "semanticKeywords": ["Delhi escorts", "NCR companions"]
+          },
+          {
+            "target": "/bangalore",
+            "anchorText": "Bangalore Escorts",
+            "context": "Other cities section - cross-market promotion",
+            "semanticKeywords": ["Bangalore escorts", "Koramangala companions"]
+          },
+          {
+            "target": "/mumbai/andheri",
+            "anchorText": "Andheri Escorts",
+            "context": "Popular areas section - location-specific targeting",
+            "semanticKeywords": ["Andheri escorts", "Western Mumbai companions"]
+          },
+          {
+            "target": "/mumbai/bandra",
+            "anchorText": "Bandra Escorts",
+            "context": "Popular areas section - location-specific targeting",
+            "semanticKeywords": ["Bandra escorts", "Central Mumbai companions"]
+          }
+        ],
+        "inboundLinkOpportunities": [
+          {
+            "source": "Homepage",
+            "anchorText": "Mumbai Escorts",
+            "semanticKeywords": ["Mumbai escorts 2026", "500+ verified profiles"]
+          },
+          {
+            "source": "Delhi page",
+            "anchorText": "Mumbai escorts",
+            "semanticKeywords": ["inter-city comparison", "regional services"]
+          }
+        ]
+      },
+      "delhi": {
+        "outboundLinks": [
+          {
+            "target": "/mumbai",
+            "anchorText": "Mumbai Escorts",
+            "context": "Other cities section - cross-market promotion",
+            "semanticKeywords": ["Mumbai escorts", "Western India companions"]
+          },
+          {
+            "target": "/delhi/connaught-place",
+            "anchorText": "Connaught Place Escorts",
+            "context": "Popular areas section - location-specific targeting",
+            "semanticKeywords": ["CP escorts", "Central Delhi companions"]
+          },
+          {
+            "target": "/delhi/karol-bagh",
+            "anchorText": "Karol Bagh Escorts",
+            "context": "Popular areas section - location-specific targeting",
+            "semanticKeywords": ["Karol Bagh escorts", "Old Delhi companions"]
+          }
+        ]
+      }
+    },
+    "servicePageLinking": {
+      "massage": {
+        "crossLinking": [
+          {
+            "target": "/companion",
+            "anchorText": "companion escorts",
+            "context": "Related services - complementary offerings",
+            "semanticKeywords": ["social event companions", "dating services"]
+          },
+          {
+            "target": "/mumbai",
+            "anchorText": "Mumbai massage escorts",
+            "context": "Location-based service pages",
+            "semanticKeywords": ["Mumbai therapeutic massage", "Andheri massage services"]
+          }
+        ]
+      },
+      "companion": {
+        "crossLinking": [
+          {
+            "target": "/massage",
+            "anchorText": "massage escorts",
+            "context": "Related services - complementary offerings",
+            "semanticKeywords": ["therapeutic companionship", "relaxation services"]
+          },
+          {
+            "target": "/delhi",
+            "anchorText": "Delhi companion escorts",
+            "context": "Location-based service pages",
+            "semanticKeywords": ["Delhi social companions", "CP dating services"]
+          }
+        ]
+      }
+    },
+    "aiLinkingAlgorithm": {
+      "contentAnalysis": {
+        "triggerWordDetection": [
+          "verified", "safety", "booking", "available", "service", "companions", "profiles"
+        ],
+        "intentClassification": [
+          "informational", "transactional", "navigational", "commercial"
+        ]
+      },
+      "linkSuggestionLogic": {
+        "informationalIntent": "Link to help center, safety pages, FAQ content",
+        "transactionalIntent": "Link to booking pages, city service pages",
+        "navigationalIntent": "Link to related location pages",
+        "commercialIntent": "Link to service comparison, pricing pages"
+      },
+      "anchorTextOptimization": {
+        "formula": "[primaryKeyword] + [locationModifier] + [serviceType]",
+        "examples": [
+          "verified Mumbai escorts",
+          "Delhi companion services",
+          "Bangalore massage therapy"
+        ]
+      }
+    }
+  }
+}

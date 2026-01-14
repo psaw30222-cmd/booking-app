@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://bookease.com/sitemap-pages.xml</loc>
+    <lastmod>2026-01-14</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://bookease.com/sitemap-cities.xml</loc>
+    <lastmod>2026-01-14</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://bookease.com/sitemap-services.xml</loc>
+    <lastmod>2026-01-14</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://bookease.com/sitemap-special.xml</loc>
+    <lastmod>2026-01-14</lastmod>
+  </sitemap>
+</sitemapindex>

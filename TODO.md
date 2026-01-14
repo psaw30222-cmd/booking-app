@@ -1,5 +1,9 @@
-# TODO for Fixing Deployment Issue
+# TODO: Update Delhi.jsx Page
 
-- [x] Add "start" script to package.json that runs "vite preview"
-- [x] Test the "start" script locally to ensure it serves the app
-- [x] Fix deprecated package warnings in Vercel build by adding overrides in package.json and regenerating package-lock.json
+## Tasks
+- [x] Replace "Why Choose BookEase Mumbai?" with "Why Choose BookEase Delhi?" in SEO content
+- [x] Replace "Popular Services in Mumbai" with "Popular Services in Delhi" in SEO content
+- [x] Replace "Our Mumbai companions offer a wide range of services including:" with "Our Delhi companions offer a wide range of services including:" in SEO content
+- [ ] Update coverage areas paragraph from Mumbai areas to Delhi areas in SEO content
+- [ ] Replace "What areas do you cover in Mumbai?" with "What areas do you cover in Delhi?" in FAQ section
+- [ ] Update FAQ answer to mention Delhi areas instead of Mumbai areas

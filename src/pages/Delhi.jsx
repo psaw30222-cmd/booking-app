@@ -226,7 +226,7 @@ const Delhi = () => {
             Delhi is home to a diverse and dynamic adult services scene. Our platform connects you with verified, professional escorts and companions across all major areas of Delhi including Connaught Place, Karol Bagh, Hauz Khas, Saket, and beyond.
           </p>
 
-          <h3>Why Choose BookEase Mumbai?</h3>
+          <h3>Why Choose BookEase Delhi?</h3>
           <ul>
             <li><strong>Verified Profiles:</strong> All companions are verified with ID proof and photos</li>
             <li><strong>24/7 Availability:</strong> Services available round the clock in all areas</li>
@@ -236,9 +236,9 @@ const Delhi = () => {
             <li><strong>Professional Service:</strong> Experienced, courteous companions</li>
           </ul>
 
-          <h3>Popular Services in Mumbai</h3>
+          <h3>Popular Services in Delhi</h3>
           <p>
-            Our Mumbai companions offer a wide range of services including:
+            Our Delhi companions offer a wide range of services including:
           </p>
           <ul>
             <li>Companionship for social events</li>
@@ -252,10 +252,9 @@ const Delhi = () => {
 
           <h3>Coverage Areas</h3>
           <p>
-            We serve all major areas of Mumbai including but not limited to: Andheri East & West, 
-            Bandra, Juhu, Powai, Lower Parel, Worli, Colaba, Fort, Churchgate, Marine Drive, 
-            Malabar Hill, Versova, Goregaon, Malad, Kandivali, Borivali, Vile Parle, Santacruz, 
-            Khar, Dadar, Parel, and Mumbai Central.
+            We serve all major areas of Delhi including but not limited to: Connaught Place,
+            Karol Bagh, Saket, Hauz Khas, Greater Kailash, Janakpuri, Rohini, Noida, Lajpat Nagar,
+            Rajouri Garden, Dwarka, Vasant Kunj, South Extension, Defence Colony, and many more.
           </p>
 
           <h3>How to Book</h3>
@@ -327,11 +326,11 @@ const Delhi = () => {
 
             <div>
               <h3 className="text-xl font-semibold text-neutral-900 mb-2">
-                What areas do you cover in Mumbai?
+                What areas do you cover in Delhi?
               </h3>
               <p className="text-neutral-600">
-                We cover all major areas of Mumbai including Andheri, Bandra, Juhu, Powai, Lower Parel, 
-                Worli, Colaba, and many more. Our companions are available across the city 24/7.
+                We cover all major areas of Delhi including Connaught Place, Karol Bagh, Saket, Hauz Khas,
+                Greater Kailash, Janakpuri, Rohini, Noida, and many more. Our companions are available across the city 24/7.
               </p>
             </div>
 

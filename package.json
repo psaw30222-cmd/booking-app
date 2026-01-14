@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node ./scripts/conditional-react-snap.js",
-    "postbuild": "echo \"Postbuild handled in build script\"",
+    "build": "vite build",
+    "postbuild": "echo \"Skipping postbuild on Vercel\"",
     "prerender": "node ./scripts/react-snap-if-local.js",
     "lint": "eslint .",
     "preview": "vite preview",
